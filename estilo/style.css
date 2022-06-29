@@ -1,0 +1,54 @@
+/* Configurações globais */
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Berkshire+Swash&display=swap');
+
+:root {
+    --cor0: #FFFFFF; 
+    --cor1: #EBEBEB;
+    --cor2: #425064;
+    --cor3: #334053;
+    --cor4: #223046;
+
+    --fonte-padrao: arial, Verdana, Helvetica, sans-serif;
+    --fonte-nomeCabecalho: 'Arizonia', Handwriting;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+}
+
+header { 
+    height: 8vh;
+}
+
+header > h1 {
+    font-family: var(--fonte-nomeCabecalho);
+    margin-left: 15vw;
+    display: inline;
+    font-size: 2.5em;
+    border: 1px solid red;
+}
+
+header > nav {
+    display: inline;
+    margin-left: 40vw;
+}
+
+header > nav > ul {
+    list-style: none;
+    display: inline;
+}
+
+header > nav > ul > li {
+    display: inline;
+    margin: 15px;
+    border: 1px solid red;
+}
+}
