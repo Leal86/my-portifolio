@@ -2,6 +2,8 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 :root {
     --cor0: #FFFFFF; 
@@ -10,8 +12,24 @@
     --cor3: #334053;
     --cor4: #223046;
 
+    --cor5: #2d2a32;
+    --cor6: #95b2b8;
+    --cor7: #e4572e;
+    --cor8: #41521f;
+    --cor9: #ffc857;
+
+   /*
+    --cor10: #70E8CB;
+    --cor11: #FFE9C7;
+    --cor12: #FF5B5B;
+    --cor13: #545454;
+    --cor14: #2D2D2F;
+    */
+
     --fonte-padrao: arial, Verdana, Helvetica, sans-serif;
-    --fonte-nomeCabecalho: 'Arizonia', Handwriting;
+    --fonte-manuscrita: 'Arizonia', Handwriting;
+    --fonte-nomeCabecalho: 'Cinzel', Display;
+    --fonte-hello: 'Roboto Mono', Monospace;
 }
 
 * {
@@ -22,33 +40,115 @@
 
 body {
     font-family: var(--fonte-padrao);
+    background-color: var(--cor1);
 }
 
 header { 
-    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: var(--cor4);
 }
 
 header > h1 {
+    margin-left: 100px;
     font-family: var(--fonte-nomeCabecalho);
-    margin-left: 15vw;
     display: inline;
     font-size: 2.5em;
-    border: 1px solid red;
+    color: var(--cor0);
+}
+
+header > h1 > a {
+    text-decoration: none;
+    color: var(--cor0);
 }
 
 header > nav {
     display: inline;
-    margin-left: 40vw;
+    position: relative;
 }
 
 header > nav > ul {
-    list-style: none;
     display: inline;
+    float: right;
+    margin-right: 70px;
 }
 
-header > nav > ul > li {
+header > nav > ul > li  {
     display: inline;
-    margin: 15px;
-    border: 1px solid red;
+    float: left;
 }
+
+header > nav > ul > li > a {
+    text-decoration: none;
+    margin: 12px;
+    padding: 12px;
+    color: var(--cor1);
+    font-weight: 600;
+    font-size: 1.2em;
+    border: 1px solid transparent;
+}
+
+header > nav > ul > li > a:hover {
+    color: var(--cor9);
+    border: 1px solid var(--cor9);
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 1s;
+    cursor: pointer;
+    
+}
+
+header > nav > ul > li > a:active {
+    color: var(--cor9);
+    text-decoration: underline;
+    border: 1px solid var(--cor9);
+    font-weight: 600;
+    transition: 1s;
+    cursor: pointer;    
+}
+
+/* Section apresentacao*/
+
+section {
+    border: 1px solid red;
+    height: 76vh;
+    background: black url('../imagens/fundo1.jpg') center center no-repeat fixed;
+    background-size: cover;
+    opacity: ;
+}
+
+section > p {
+    font-family: var(--fonte-hello);
+    font-size: 4.4em;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    padding: 70px;
+}
+
+#curriculo {
+    text-align: center;
+}
+
+#curriculo > a {
+    text-decoration: none;
+    border: 2px solid rgb(5, 5, 5);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgb(88, 84, 84);
+    padding: 25px;
+    font-size: 1.2em;
+}
+
+#curriculo > a:hover {
+    text-decoration: none;
+    border: 2px solid rgb(5, 5, 5);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgb(88, 84, 84);
+    padding: 25px;
+    background-color: rgb(153, 6, 6);
+    color: white;
+    transition: 0.5s;
+    font-size: 1.2em;
 }
