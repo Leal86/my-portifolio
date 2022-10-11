@@ -20,34 +20,102 @@
     --helloWorld: 'Roboto Mono', Monospace;
 }
 
-body {
+* {
     margin: 0px;
     padding: 0px;
-    font-family: var(--padrao);
 }
+
+body {
+    font-family: var(--padrao);
+    font-size: 16px;
+}
+
 
 header {
-    display: block;
+    border: 1px solid red;
+    min-height: 9vh;
+    background-color: var(--cor6);
 }
 
-.logo {
-    width: 5.8vw;
-    margin: 1vw 3vw;
-    display: inline;
-}
-
-header > div > p {
-    display: inline-block;
+.container {
+    display: flex;
     align-items: center;
-    font-size: 1.5em;
+}
+
+#logo-cabecalho {
+    width: 100px;
+    min-width: 80px;
+    margin-left: 3vw;
+    padding: 15px;
+    border: 1px solid yellowgreen;
+    cursor: pointer;
+}
+
+.link-nome {
+    margin: auto;
     font-family: var(--nomeCabecalho);
-    margin: 0px;
+    font-size: 2.3em;
+    color: var(--cor2);
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.link-nome:hover {
+    color: gold;
+    transition: 1s;
+}
+
+/* NAVEGAÇÃO */
+
+nav {
+    border: 1px solid red;
+    margin-left: auto;
+    padding: 30px;
+    user-select: none;
+    
+}
+
+nav > a {
+    font-size: 1.4em;
+    color: var(--cor2);
+    margin: 20px;
+    text-decoration: none;
+    position: relative;
+    user-select: none;
+}
+
+nav > a::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: var(--cor2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+nav > a:hover::after {
+    width: 99%;
 }
 
 
+/* SECTIONS */
 
-header > div > nav > ul > li {
-    display: inline;
-    list-style: none;    
+#apresentacao {
+    border: 1px solid red;
+    background: var(--cor6) url('../imagens/fundo0.jpg') center top no-repeat fixed;
+    background-size: cover;
+    height: 50vh;
 }
+
+#apresentacao > p {
+    font-size: 3em;
+    font-family: var(--helloWorld);
+    color: var(--cor0);
+    padding: 140px 0px 0px 55px;
+    user-select: none;
+}
+
 
