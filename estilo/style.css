@@ -45,8 +45,7 @@ header {
 #logo-cabecalho {
     width: 100px;
     min-width: 80px;
-    margin-left: 3vw;
-    padding: 15px;
+    padding: 20px;
     border: 1px solid yellowgreen;
     cursor: pointer;
 }
@@ -54,7 +53,7 @@ header {
 .link-nome {
     margin: auto;
     font-family: var(--nomeCabecalho);
-    font-size: 2.3em;
+    font-size: 2em;
     color: var(--cor2);
     text-decoration: none;
     cursor: pointer;
@@ -71,15 +70,14 @@ header {
 nav {
     border: 1px solid red;
     margin-left: auto;
-    padding: 30px;
+    padding: 20px;
     user-select: none;
-    
 }
 
 nav > a {
-    font-size: 1.4em;
+    font-size: 1em;
     color: var(--cor2);
-    margin: 20px;
+    margin: 5px;
     text-decoration: none;
     position: relative;
     user-select: none;
@@ -97,7 +95,7 @@ nav > a::after {
 }
 
 nav > a:hover::after {
-    width: 99%;
+    width: 100%;
 }
 
 
@@ -105,7 +103,8 @@ nav > a:hover::after {
 
 #apresentacao {
     border: 1px solid red;
-    background: var(--cor6) url('../imagens/fundo0.jpg') center top no-repeat fixed;
+    background: var(--cor6) url('../imagens/fundo0.jpg') bottom center no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     height: 50vh;
 }
@@ -118,4 +117,29 @@ nav > a:hover::after {
     user-select: none;
 }
 
+/* RESPOSNSIVIDADE */
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
