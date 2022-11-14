@@ -5,59 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/style.css">
     <link rel="shortcut icon" href="logos/favicon.ico" type="image/x-icon">
+    <!-- Site de ícones do google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/style.css">
     <title>Portifólio | Alexsander Leal</title>
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
 
-        <div class="container">
+        <div id="container">
 
-            <a href="index.html">
-                <img src="logos/logo-cabecalho.png" id="logo-cabecalho" alt="Logotipo">
-            </a>
-            <a href="https://www.linkedin.com/in/alexsanderleal86/" target="_blank" class="link-nome">Alexsander Leal</a>
-
-            <nav>
-
-                <a href="index1.html">Home</a>
-
-                <a href="sobre.html">About Me</a>
-
-                <a href="formacao.html">Formação</a>
-
-                <a href="cursos.html">Projetos</a>
-
-                <a href="projetos.html">Projetos</a>
-
-                <a href="contato.html">Contato</a>
-
-            </nav>
-
+            <div id="img-cabecalho">
+                <a href="index.html">
+                    <img src="logos/logo-cabecalho.png" id="logo-cabecalho" alt="Logotipo">
+                </a>
+            </div>
+            
+            <div id="nome">
+                <a href="https://www.linkedin.com/in/alexsanderleal86/" target="_blank" class="link-nome">Alexsander Leal</a>
+            </div>
 
         </div>
+
     </header>
-    
+
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+
+    <menu id="itens">
+
+        <a href="index1.html">Home</a>
+
+        <a href="sobre.html">About Me</a>
+
+        <a href="formacao.html">Formação</a>
+
+        <a href="cursos.html">Projetos</a>
+
+        <a href="projetos.html">Projetos</a>
+
+        <a href="contato.html">Contato</a>
+
+    </menu>
+
     <main>
+        
         <section id="apresentacao">
           
             <p>Hello world, <br> me chamo Alexsander Leal...</p>
             
         </section>
-
+        
         <section id="sobre">
             
-            <img src="imagens/eu-pequeno.JPG" id="ft-sobre" alt=" foto de Alexsander Leal">
             <h2>Sobre Mim</h2>
-            <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae harum odio aliquid! Expedita,
-                perspiciatis saepe itaque error aliquam ab ipsa? Saepe aliquid quis omnis rerum possimus accusamus
-                itaque eum incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. A et dignissimos, rerum
-                dolor excepturi porro, reprehenderit quia, voluptatum recusandae voluptatem laboriosam corrupti odio
-                nemo dolores ipsum at ullam aliquam veniam.</aside>
+
+            <aside>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae harum odio aliquid! Expedita,
+                    perspiciatis saepe itaque error aliquam ab ipsa? Saepe aliquid quis omnis rerum possimus accusamus
+                    itaque eum incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. A et dignissimos, rerum
+                    dolor excepturi porro, reprehenderit quia, voluptatum recusandae voluptatem laboriosam corrupti odio
+                    nemo dolores ipsum at ullam aliquam veniam.
+                </p>
+            </aside>
+
+            <div id="img-eu">
+                <img src="imagens/eu-pequeno.JPG" id="foto-sobre" alt=" foto de Alexsander Leal">
+            </div>
+
         </section>
-<!--
+        <!--
         <section id="formacao">
 
             <h2>Formacao</h2>
@@ -107,16 +126,16 @@
             <p>Criar uma pagina de contatos com as redes sociais disponiveis</p>
         </section> -->
     </main>
-<!--
+    <!--
     <footer>
         <h2>rodape</h2>
         <ul>
-            <li><a href="index1.html">Home</a></li>
-            <li><a href="sobre.html">About Me</a></li>
-            <li><a href="formacao.html">Formação</a></li>
-            <li><a href="cursos.html">Projetos</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <a href="index1.html">Home</a>
+            <a href="sobre.html">About Me</a>
+            <a href="formacao.html">Formação</a>
+            <a href="cursos.html">Projetos</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="contato.html">Contato</a>
         </ul>
 
         <img src="logos/logo-rodape.png" alt="logotipo">
@@ -126,6 +145,24 @@
         <img src="logos/Linkedin-PNG-HD-Isolated.png" alt="logotipo do linkedin">
 
     </footer> -->
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none';
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
 
 </body>
 
