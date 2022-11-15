@@ -35,17 +35,17 @@
 
     <menu id="itens">
 
-        <a href="index1.html">Home</a>
+        <a class="opcoes" onclick="opcaoEscolhida()" href="index.html">Home</a>
 
-        <a href="sobre.html">About Me</a>
+        <a class="opcoes" onclick="opcaoEscolhida()" href="#sobre">About Me</a>
 
-        <a href="formacao.html">Formação</a>
+        <a class="opcoes" onclick="opcaoEscolhida()" href="#formacao">Formação</a>
 
-        <a href="cursos.html">Projetos</a>
+        <a class="opcoes" onclick="opcaoEscolhida()" href="#cursos">Projetos</a>
 
-        <a href="projetos.html">Projetos</a>
+        <a class="opcoes" onclick="opcaoEscolhida()" href="#projetos">Projetos</a>
 
-        <a href="contato.html">Contato</a>
+        <a class="opcoes" onclick="opcaoEscolhida()" href="#contato">Contato</a>
 
     </menu>
 
@@ -53,7 +53,7 @@
         
         <section id="apresentacao">
           
-            <p>Hello world, <br> me chamo Alexsander Leal...</p>
+            <p>Hello world, <br> me chamo <br> Alexsander Leal...</p>
             
         </section>
         
@@ -148,6 +148,14 @@
 
     <script>
         function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none';
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+        function opcaoEscolhida() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none';
             } else {

@@ -29,6 +29,7 @@
 html {
     width: 100vw;
     height: 100vh;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -115,7 +116,7 @@ menu > a:hover {
 
 section#apresentacao {
     width: 100vw;
-    height: 50vh;
+    height: 83vh;
     background: black url('../imagens/fundo0.jpg') no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -125,12 +126,12 @@ section#apresentacao {
 
 section#apresentacao > p {
     color: white;
-    font-size: 1.3em;
+    font-size: 2em;
     font-family: var(--helloWorld);
     text-shadow: 1px 1px 9px var(--cor2);
     position: absolute;
     left: 30px;
-    top: 20vh;
+    top: 30vh;
 }
 
 /* Section Sobre Mim*/
