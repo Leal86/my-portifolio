@@ -116,7 +116,7 @@ menu > a:hover {
 
 section#apresentacao {
     width: 100vw;
-    height: 83vh;
+    height: 83.2vh;
     background: black url('../imagens/fundo0.jpg') no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -138,6 +138,7 @@ section#apresentacao > p {
 
 section#sobre {
     background-color: rgb(228, 228, 228);
+    width: 100vw;
 }
 
 section#sobre > h2 {
@@ -146,15 +147,15 @@ section#sobre > h2 {
     text-align: center;
 }
 
-section#sobre > aside {
+section#sobre > div.conteudo-sobre {
     width: 100vw;
-    margin: auto;
-    padding: 15px;
+    margin: 0px;
+    padding: 0px 28px;
 }
 
-section#sobre > aside > p {
-    width: 90vw;
-    margin: auto;
+section#sobre > div.conteudo-sobre > p {
+    width: 85vw;
+    margin: 20px 0px;
     font-size: 1em;
     text-align: justify;
     text-indent: 30px;
@@ -162,11 +163,18 @@ section#sobre > aside > p {
 
 section#sobre > div#img-eu {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 section#sobre > div#img-eu > #foto-sobre {
     border-radius: 50px;
+}
+
+/* Section Formação */
+
+section#formacao {
+    background-color: var(--cor6);
+    width: 100vw;
 }
 
 
