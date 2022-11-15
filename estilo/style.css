@@ -115,17 +115,22 @@ menu > a:hover {
 
 section#apresentacao {
     width: 100vw;
-    height: 30vh;
+    height: 50vh;
     background: black url('../imagens/fundo0.jpg') no-repeat;
     background-attachment: scroll;
     background-size: cover;
+    display: block;
+    position: relative;
 }
 
 section#apresentacao > p {
     color: white;
-    font-size: 2em;
+    font-size: 1.3em;
     font-family: var(--helloWorld);
-    padding: 60px 35px;
+    text-shadow: 1px 1px 9px var(--cor2);
+    position: absolute;
+    left: 30px;
+    top: 20vh;
 }
 
 /* Section Sobre Mim*/
