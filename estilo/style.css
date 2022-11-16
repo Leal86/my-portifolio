@@ -1,4 +1,4 @@
-/* Configurações globais */
+/******************** Configurações globais ********************/
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Berkshire+Swash&display=swap');
@@ -27,8 +27,6 @@
 }
 
 html {
-    width: 100vw;
-    height: 100vh;
     scroll-behavior: smooth;
 }
 
@@ -72,8 +70,22 @@ body {
     font-size: 1em;
 }
 
+h2 {
+    padding: 35px 0px 15px 0px;
+    font-family: var(--padrao,), Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 
-/* Navegação */
+p {
+    width: 85vw;
+    margin: 20px 0px;
+    font-size: 1em;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+
+/******************** Navegação ********************/
 
 i#burguer {
     background-color: black;
@@ -112,10 +124,9 @@ menu > a:hover {
 }
 
 
-/* Section Apresentação */
+/******************** Section Apresentação ********************/
 
 section#apresentacao {
-    width: 100vw;
     height: 83.2vh;
     background: black url('../imagens/fundo0.jpg') no-repeat;
     background-attachment: scroll;
@@ -134,48 +145,62 @@ section#apresentacao > p {
     top: 30vh;
 }
 
-/* Section Sobre Mim*/
+/******************** Section Sobre Mim ********************/
 
 section#sobre {
     background-color: rgb(228, 228, 228);
-    width: 100vw;
-}
-
-section#sobre > h2 {
-    padding: 35px 0px 5px 0px;
-    font-family: var(--padrao,), Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
 section#sobre > div.conteudo-sobre {
-    width: 100vw;
-    margin: 0px;
-    padding: 0px 28px;
+    margin: 0px 30px;
+    padding-bottom: 15px;
 }
 
-section#sobre > div.conteudo-sobre > p {
-    width: 85vw;
-    margin: 20px 0px;
-    font-size: 1em;
-    text-align: justify;
-    text-indent: 30px;
-}
-
-section#sobre > div#img-eu {
-    text-align: center;
+section#sobre > div.conteudo-sobre > div#img-eu {
     padding: 10px;
 }
 
-section#sobre > div#img-eu > #foto-sobre {
-    border-radius: 50px;
+section#sobre > div.conteudo-sobre > div#img-eu > #foto-sobre {
+    border-radius: 20px;
 }
 
-/* Section Formação */
+/******************** Section Formação ********************/
 
 section#formacao {
     background-color: var(--cor6);
-    width: 100vw;
+    text-align: center;
 }
+
+section#formacao > h2 {
+    color: white;
+}
+
+section#formacao > div.conteudo-formacao {
+    color: whitesmoke;
+    margin: 0px 28px;
+    padding-bottom: 15px;
+}
+
+
+/******************** Section Certificados ********************/
+
+section#cursos > div#grupo-certificados {
+    background-color: black;
+    margin-top: 15px;
+}
+
+section#cursos > div#grupo-certificados > div.certificados {
+    width: 100%;
+    margin: auto;     
+}
+
+section#cursos > div#grupo-certificados > div.certificados > .img-certificado {
+    width: 100%;
+    padding: 5px;
+}
+
+
 
 
 /* RESPOSNSIVIDADE */
