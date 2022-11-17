@@ -35,17 +35,17 @@
 
     <menu id="itens">
 
-        <a class="opcoes" onclick="opcaoEscolhida()" href="index.html">Home</a>
+        <a class="opcoes" onclick="clickMenu()" href="index.html">Home</a>
 
-        <a class="opcoes" onclick="opcaoEscolhida()" href="#sobre">About Me</a>
+        <a class="opcoes" onclick="clickMenu()" href="#sobre">About Me</a>
 
-        <a class="opcoes" onclick="opcaoEscolhida()" href="#formacao">Formação</a>
+        <a class="opcoes" onclick="clickMenu()" href="#formacao">Formação</a>
 
-        <a class="opcoes" onclick="opcaoEscolhida()" href="#cursos">Projetos</a>
+        <a class="opcoes" onclick="clickMenu()" href="#cursos">Cursos</a>
 
-        <a class="opcoes" onclick="opcaoEscolhida()" href="#projetos">Projetos</a>
+        <a class="opcoes" onclick="clickMenu()" href="#projetos">Projetos</a>
 
-        <a class="opcoes" onclick="opcaoEscolhida()" href="#contato">Contato</a>
+        <a class="opcoes" onclick="clickMenu()" href="#contato">Contato</a>
 
     </menu>
 
@@ -117,7 +117,7 @@
             <h2>Cursos Livres</h2>
 
             <div id="grupo-certificados">
-                
+
                 <div class="certificados">
                     <img src="imagens/1-Logica-de-programacao.jpg" class="img-certificado" alt="Certificado de Lógica de Programação">
                 </div>
@@ -212,14 +212,6 @@
 
     <script>
         function clickMenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none';
-            } else {
-                itens.style.display = 'block'
-            }
-        }
-
-        function opcaoEscolhida() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none';
             } else {
