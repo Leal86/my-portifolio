@@ -140,6 +140,7 @@ section#apresentacao > p {
     font-size: 2em;
     font-family: var(--helloWorld);
     text-shadow: 1px 1px 9px var(--cor2);
+    text-indent: 0px;
     position: absolute;
     left: 30px;
     top: 30vh;
