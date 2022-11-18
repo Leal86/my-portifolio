@@ -184,24 +184,81 @@ section#formacao > div.conteudo-formacao {
 }
 
 
-/******************** Section Certificados ********************/
+/******************** Section Cursos (Certificados) ********************/
 
-section#cursos > div#grupo-certificados {
-    background-color: black;
-    margin-top: 15px;
+section#cursos {
+    background: rgb(243, 241, 241);
 }
 
-section#cursos > div#grupo-certificados > div.certificados {
+
+section#cursos > .slider {
+    overflow: hidden;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    margin-top: 10px;
+    padding: 20px;
+}
+
+section#cursos > .slider > .slider-content {
+    display: flex;
+    flex-wrap: nowrap;
     width: 100%;
-    margin: auto;     
+    transition: all 1s ease-in-out;
+    margin: 20px 0px;
 }
 
-section#cursos > div#grupo-certificados > div.certificados > .img-certificado {
+section#cursos > .slider > .slider-content > .slider-item {
+    flex: 0 0 auto;
     width: 100%;
-    padding: 5px;
 }
 
+section#cursos > .slider > input:nth-child(1):checked ~ .slider-content {
+    transform: translateX(0%);
+}
 
+section#cursos > .slider > input:nth-child(2):checked ~ .slider-content {
+    transform: translateX(-100%);
+}
+
+section#cursos > .slider > input:nth-child(3):checked ~ .slider-content {
+    transform: translateX(-200%);
+}
+
+section#cursos > .slider > input:nth-child(4):checked ~ .slider-content {
+    transform: translateX(-300%);
+}
+
+section#cursos > .slider > input:nth-child(5):checked ~ .slider-content {
+    transform: translateX(-400%);
+}
+
+section#cursos > .slider > input:nth-child(6):checked ~ .slider-content {
+    transform: translateX(-500%);
+}
+
+section#cursos > .slider > input:nth-child(7):checked ~ .slider-content {
+    transform: translateX(-600%);
+}
+
+section#cursos > .slider > input:nth-child(8):checked ~ .slider-content {
+    transform: translateX(-700%);
+}
+
+section#cursos > .slider > input:nth-child(9):checked ~ .slider-content {
+    transform: translateX(-800%);
+}
+
+section#cursos > .slider > input:nth-child(10):checked ~ .slider-content {
+    transform: translateX(-900%);
+}
+
+section#cursos > .slider > input:nth-child(11):checked ~ .slider-content {
+    transform: translateX(-1000%);
+}
+
+section#cursos > .slider > input:nth-child(12):checked ~ .slider-content {
+    transform: translateX(-1100%);
+}
 
 
 /* RESPOSNSIVIDADE */
