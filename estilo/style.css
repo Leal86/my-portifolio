@@ -264,6 +264,28 @@ section#cursos > .slider > input:nth-child(12):checked ~ .slider-content {
     transform: translateX(-1100%);
 }
 
+/******************** Section Projetos ********************/
+
+section#projetos {
+    
+}
+
+section#projetos > div#grupo-projetos {
+    border: 1px solid rgb(0, 26, 255);
+    text-align: center;
+}
+
+section#projetos > div#grupo-projetos > div.projeto {
+    width: 45%;
+    display: inline-block;
+    border: 1px solid red;
+    margin: 6px;
+}
+
+section#projetos > div#grupo-projetos > div.projeto > img.img-projeto {
+    width: 100%;
+}
+
 
 /* RESPOSNSIVIDADE */
 
