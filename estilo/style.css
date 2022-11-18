@@ -196,7 +196,7 @@ section#cursos > .slider {
     text-align: center;
     background: rgb(0, 0, 0);
     margin-top: 10px;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 section#cursos > .slider > .slider-content {
@@ -204,11 +204,15 @@ section#cursos > .slider > .slider-content {
     flex-wrap: nowrap;
     width: 100%;
     transition: all 1s ease-in-out;
-    margin: 20px 0px;
+    margin:20px 0px 0px 0px;
 }
 
 section#cursos > .slider > .slider-content > .slider-item {
     flex: 0 0 auto;
+    width: 100%;
+}
+
+section#cursos > .slider > .slider-content > .slider-item > img {
     width: 100%;
 }
 
