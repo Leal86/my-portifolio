@@ -272,11 +272,12 @@ section#projetos {
 
 section#projetos > div#grupo-projetos {
     border: 1px solid rgb(0, 26, 255);
+    padding: 7px;
     text-align: center;
 }
 
 section#projetos > div#grupo-projetos > div.projeto {
-    width: 45%;
+    width: 30%;
     display: inline-block;
     border: 1px solid red;
     margin: 6px;
@@ -285,6 +286,32 @@ section#projetos > div#grupo-projetos > div.projeto {
 section#projetos > div#grupo-projetos > div.projeto > img.img-projeto {
     width: 100%;
 }
+
+section#projetos > div#veja-mais-projetos {
+    
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+
+}
+
+section#projetos > div#veja-mais-projetos > a {
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-weight: 600;
+    padding: 17px 50px;
+    cursor: pointer;
+}
+
+section#projetos > div#veja-mais-projetos > a:hover {
+    color: var(--cor3);
+    text-shadow: 1px 1px 20px var(--cor2);
+    transition: 0.3s ease-in-out;
+}
+
+
 
 
 /* RESPOSNSIVIDADE */
