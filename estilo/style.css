@@ -293,7 +293,7 @@ section#projetos > div#grupo-projetos > div.projeto:hover {
     
 }
 
-section#projetos > div#grupo-projetos > div.projeto > iframe {
+section#projetos > div#grupo-projetos > div.projeto > img {
     width: 100%;
     height: 340px;
     padding-bottom: 15px;
