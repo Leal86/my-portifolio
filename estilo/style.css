@@ -267,47 +267,48 @@ section#cursos > .slider > input:nth-child(12):checked ~ .slider-content {
 /******************** Section Projetos ********************/
 
 section#projetos {
-    
+    background-color: #003554;
 }
 
 section#projetos > div#grupo-projetos {
-    border: 1px solid rgb(0, 26, 255);
+   
     padding: 5px;
     text-align: center;
 }
 
 section#projetos > div#grupo-projetos > div.projeto {
     width: 159px;
-    display: inline-block;
-    border: 2px solid gray;
-    background: rgb(253, 253, 253);
+    height: 235px;
+    display: inline-block;  
     margin: 10px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
+    background-color: #030303;
+    
 }
 
 section#projetos > div#grupo-projetos > div.projeto:hover {
-    box-shadow: 0px 1px 10px var(--cor6);
+    box-shadow: 0px 1px 30px var(--cor2);
     transition: 0.6s ease-in;
     box-sizing: border-box;
-    
+    color: var(--cor2);
+      
 }
 
 section#projetos > div#grupo-projetos > div.projeto > img {
     width: 100%;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 section#projetos > div#grupo-projetos > div.projeto > p {
-    display: inline; 
+    display: inline;
 }
 
 section#projetos > div#grupo-projetos > div.projeto > p > a.link-projeto {
     text-decoration: none;
-    color: rgb(14, 14, 14);
+    color: var(--cor3);
     font-weight: 600;
     font-size: 1.1em;
     cursor: pointer;
-    padding: 10px 20px;
     /*border: 1px solid red;*/
 }
 
@@ -324,32 +325,32 @@ section#projetos > div#grupo-projetos > div.projeto > a.link-projeto > img.img-p
 }
 
 section#projetos > div#veja-mais-projetos {
-    border: 1px solid red;
     display: flex;
     align-items: center;
-
 }
 
 section#projetos > div#veja-mais-projetos > a {
     margin: auto;
     text-decoration: none;
-    color: white;
-    background-color: black;
+    color: rgb(250, 248, 248);
+    font-size: 1.5em;
     font-weight: 600;
-    padding: 17px 50px;
+    padding: 17px 40px;
     cursor: pointer;
+    border: 2px solid black;
+    
 }
 
 section#projetos > div#veja-mais-projetos > a:hover {
     color: var(--cor3);
-    text-shadow: 1px 1px 20px var(--cor2);
-    transition: 0.3s ease-in-out;
+    text-shadow: 1px 1px 30px var(--cor1);
+    transition: 0.8s ease-in-out;
 }
 
 /******************** Section Contatos ********************/
 
 section#contatos {
-    
+    background-color: rgb(245, 238, 238);
 }
 
 section#contatos > p {
