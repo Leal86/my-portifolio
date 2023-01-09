@@ -360,33 +360,31 @@ footer {
     background-color: #000000;
 }
 
-footer > h6 {
-    color: white;
-    padding: 5px 10px;
-}
-
 footer > div#paginas {
-    border: 1px solid yellow;
     width: 100%;
     display: flex;
 }
 
 footer > div#paginas > div#menu-rodape {
-    border: 1px solid blue;
     width: 30%;
     display: block;
 }
 
+footer > div#paginas > div#menu-rodape > h6 {
+    color: white;
+    padding: 10px 10px;
+}
+
 footer > div#paginas > div#menu-rodape > div.menu-rodape1 {
-    border: 1px solid red;
     width: 50%;
     display: inline-block;
+    text-align: start;
 }
 
 footer > div#paginas > div#menu-rodape > div.menu-rodape2 {
-    border: 1px solid red;
     width: 45%;
     display: inline-block;
+    text-align: start;
 }
 
 footer > div#paginas > div#menu-rodape > div.menu-rodape1 > ul > a {
@@ -400,7 +398,6 @@ footer > div#paginas > div#menu-rodape > div.menu-rodape2 > ul > a {
 }
 
 footer > div#paginas > div#centro-rodape {
-    border: 1px solid green;
     width: 40%;
     display: inline-block;
     text-align: center;
@@ -408,7 +405,7 @@ footer > div#paginas > div#centro-rodape {
 
 footer > div#paginas > div#centro-rodape > img {
     width: 30px;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 footer > div#paginas > div#centro-rodape > p {
@@ -419,6 +416,7 @@ footer > div#paginas > div#centro-rodape > p {
 
 footer > div#paginas > div.redes {
     width: 30%;
+    text-align: center;
 }
 
 footer > div#paginas > div.redes > h6 {
@@ -428,7 +426,7 @@ footer > div#paginas > div.redes > h6 {
 
 footer > div#paginas > div.redes > img {
     display: inline;
-    width: 30px;
+    width: 25px;
     margin: 1px;
 }
 
