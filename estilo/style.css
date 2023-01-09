@@ -421,6 +421,17 @@ footer > div#paginas > div.redes {
     width: 30%;
 }
 
+footer > div#paginas > div.redes > h6 {
+    color: white;
+    padding: 10px;
+}
+
+footer > div#paginas > div.redes > img {
+    display: inline;
+    width: 30px;
+    margin: 1px;
+}
+
 /* RESPOSNSIVIDADE */
 
 /* Extra small devices (phones, 600px and down) */
