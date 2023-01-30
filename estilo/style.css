@@ -136,6 +136,7 @@ section#apresentacao {
 }
 
 section#apresentacao > p {
+    width: auto;
     color: white;
     font-size: 2em;
     font-family: var(--helloWorld);
@@ -354,7 +355,7 @@ section#projetos > div#veja-mais-projetos > a:hover {
     transition: 0.3s ease-in-out;
 }
 
-/******************** Section Contatos ********************/
+/******************** Section Rodapé ********************/
 
 footer {
     background-color: #000000;
