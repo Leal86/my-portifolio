@@ -379,28 +379,39 @@ footer > div#paginas > div#menu-rodape > div.menu-rodape1 {
     width: 50%;
     display: inline-block;
     text-align: start;
+    padding-bottom: 15px;
 }
 
 footer > div#paginas > div#menu-rodape > div.menu-rodape2 {
     width: 45%;
     display: inline-block;
     text-align: start;
+    padding-bottom: 15px;
 }
 
-footer > div#paginas > div#menu-rodape > div.menu-rodape1 > ul > a {
+footer > div#paginas > div#menu-rodape > div.menu-rodape1 > ul > li > a {
     padding: 10px;
-    font-size: 0.7em;
+    font-size: 0.6em;
+    text-decoration: none;
+    color: white;
+
 }
 
-footer > div#paginas > div#menu-rodape > div.menu-rodape2 > ul > a {
+footer > div#paginas > div#menu-rodape > div.menu-rodape2 > ul > li > a {
     padding: 10px;
-    font-size: 0.7em;
+    font-size: 0.6em;
+    text-decoration: none;
+    color: white;
 }
 
 footer > div#paginas > div#centro-rodape {
     width: 40%;
     display: inline-block;
     text-align: center;
+}
+
+footer > div#paginas > div#menu-rodape > div > ul > li > a:hover {
+    text-decoration: underline;
 }
 
 footer > div#paginas > div#centro-rodape > img {
@@ -424,10 +435,18 @@ footer > div#paginas > div.redes > h6 {
     padding: 10px;
 }
 
-footer > div#paginas > div.redes > img {
+footer > div#paginas > div.redes > a > img {
     display: inline;
     width: 25px;
-    margin: 1px;
+    margin: 2px;
+    margin-top: 8px;
+}
+
+footer > div#paginas > div.redes > a > img:hover{
+    box-shadow: 0px 0px 15px var(--cor2);
+    transition: 0.8s ease-in;
+    box-sizing: border-box;
+    color: var(--cor2);
 }
 
 /* RESPOSNSIVIDADE */
