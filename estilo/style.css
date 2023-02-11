@@ -136,6 +136,7 @@ section#apresentacao {
 }
 
 section#apresentacao > p {
+    width: auto;
     color: white;
     font-size: 2em;
     font-family: var(--helloWorld);
@@ -354,7 +355,7 @@ section#projetos > div#veja-mais-projetos > a:hover {
     transition: 0.3s ease-in-out;
 }
 
-/******************** Section Contatos ********************/
+/******************** Section Rodapé ********************/
 
 footer {
     background-color: #000000;
@@ -379,39 +380,50 @@ footer > div#paginas > div#menu-rodape > div.menu-rodape1 {
     width: 50%;
     display: inline-block;
     text-align: start;
+    padding-bottom: 15px;
 }
 
 footer > div#paginas > div#menu-rodape > div.menu-rodape2 {
     width: 45%;
     display: inline-block;
     text-align: start;
+    padding-bottom: 15px;
 }
 
-footer > div#paginas > div#menu-rodape > div.menu-rodape1 > ul > a {
+footer > div#paginas > div#menu-rodape > div.menu-rodape1 > ul > li > a {
     padding: 10px;
-    font-size: 0.7em;
+    font-size: 0.6em;
+    text-decoration: none;
+    color: white;
+
 }
 
-footer > div#paginas > div#menu-rodape > div.menu-rodape2 > ul > a {
-    padding: 10px;
-    font-size: 0.7em;
+footer > div#paginas > div#menu-rodape > div.menu-rodape2 > ul > li > a {
+    font-size: 0.5em;
+    text-decoration: none;
+    color: white;
 }
 
 footer > div#paginas > div#centro-rodape {
     width: 40%;
-    display: inline-block;
     text-align: center;
 }
 
+footer > div#paginas > div#menu-rodape > div > ul > li > a:hover {
+    text-decoration: underline;
+}
+
 footer > div#paginas > div#centro-rodape > img {
-    width: 30px;
-    margin-top: 20px;
+    width: 40px;
+    margin-top: 15px;
 }
 
 footer > div#paginas > div#centro-rodape > p {
     font-size: 0.5em;
-    margin: 5px;
+    margin: 15px 0px;
     color: white;
+    text-align: center;
+    text-indent: 0px;
 }
 
 footer > div#paginas > div.redes {
@@ -424,10 +436,18 @@ footer > div#paginas > div.redes > h6 {
     padding: 10px;
 }
 
-footer > div#paginas > div.redes > img {
+footer > div#paginas > div.redes > a > img {
     display: inline;
-    width: 25px;
-    margin: 1px;
+    width: 20px;
+    margin: 2px;
+    margin-top: 8px;
+}
+
+footer > div#paginas > div.redes > a > img:hover{
+    box-shadow: 0px 0px 15px var(--cor2);
+    transition: 0.8s ease-in;
+    box-sizing: border-box;
+    color: var(--cor2);
 }
 
 /* RESPOSNSIVIDADE */
