@@ -182,12 +182,15 @@ section#formacao {
 
 section#formacao > h2 {
     color: white;
+    font-size: 2em;
 }
 
 section#formacao > div.conteudo-formacao {
     color: whitesmoke;
     margin: 0px 28px;
     padding-bottom: 15px;
+    font-size: 1.2em;
+    line-height: 1.4em;
 }
 
 
