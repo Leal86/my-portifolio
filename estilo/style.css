@@ -133,25 +133,31 @@ section#apresentacao {
     background-size: cover;
     display: block;
     position: relative;
+    
 }
 
 section#apresentacao > p {
     width: auto;
     color: white;
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: var(--helloWorld);
     text-shadow: 1px 1px 9px var(--cor2);
     text-indent: 0px;
     position: absolute;
     left: 30px;
-    top: 30vh;
+    top: 25vh;
+    text-align: left;
 }
 
-/******************** Section Sobre Mim ********************/
+/******************** Section Sobre ********************/
 
 section#sobre {
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(245, 242, 242);
     text-align: center;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    font-weight: 500;
+    
 }
 
 section#sobre > div.conteudo-sobre {
@@ -211,6 +217,7 @@ section#cursos > .slider > .slider-content {
 section#cursos > .slider > .slider-content > .slider-item {
     flex: 0 0 auto;
     width: 100%;
+    padding: 5px 30px 20px 30px;
 }
 
 section#cursos > .slider > .slider-content > .slider-item > img {
