@@ -32,16 +32,19 @@ html {
 
 header {
     background-color: var(--cor6);
+
 }
 
 header > div#container {
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-items: center;
+    justify-content: space-around;
+
 }
 
 header > div#container > div#img-cabecalho {
-    width: 30%;
+    width: 20%;
 }
 
 header > div#container > div#img-cabecalho > a {
@@ -49,18 +52,20 @@ header > div#container > div#img-cabecalho > a {
 }
 
 header > div#container > div#img-cabecalho > a > img#logo-cabecalho {
-    width: 80px;
-    padding: 10px 0px;
+    width: 60px;
+    padding-left: 0px 5px;
+    border: 1px solid red;
 }
 
 header > div#container > div#nome {
-    width: 70%;
-    padding: 22px 0px;
+    width: 50%;
+    padding: 0px;
+    border: 1px solid red;
 }
 
 header > div#container > div#nome > a.link-nome {
     color: var(--cor2);
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: var(--nomeCabecalho);
     text-decoration: none;
 }
@@ -88,13 +93,14 @@ p {
 /******************** Navegação ********************/
 
 i#burguer {
-    background-color: black;
     color: white;
-    display: block;
-    font-size: 1.7em;
+    display: inline-block;
+    font-size: 1.8em;
     text-align: center;
-    padding: 15px;
-    cursor: pointer;   
+    padding: 0px 15px;
+    cursor: pointer; 
+    border: 1px solid red;
+    justify-content: end !important;
 }
 
 i#burguer:hover {
@@ -103,11 +109,11 @@ i#burguer:hover {
     transition: 0.5s ease-in-out;
 }
 
-menu {
+nav {
     display: none;
 }
 
-menu > a {
+nav > ul > li > a {
     display: block;
     padding: 15px;
     text-decoration: none;
@@ -117,7 +123,7 @@ menu > a {
     border-top: 2px solid var(--cor5);
 }
 
-menu > a:hover {
+nav > ul > li > a:hover {
     color: var(--cor2);
     text-shadow: 2px 3px 5px var(--cor2);
     transition: 0.5s ease-in-out;
