@@ -127,19 +127,38 @@ body {
    
 }
 
+/* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
+.banner {
+    background: var(--azul-profundo-escuro) url("../img/fundos/fundo0.jpg") no-repeat center top / contain;
+    height: 100vh;
+}
 
+.banner__textos {
+    display: flex;
+    flex-direction: column;
+    
+}
 
+.txt-apresentacao {
+    color: var(--branco);
+    font-family: var(--fonte-helloWorld);
+    font-size: 1.3em;
+}
 
+.txt-inicio {
+    padding: 1.2em;
+    align-self: flex-start;
+}
 
+.txt-central {
+    padding: 1em;
+    align-self: center;
+}
 
-
-
-
-
-
-
-/* SECTION APRESENTAÇÃO ****************************************************************************************************************************/
-
+.txt-fim {
+    padding: 1.5em;
+    align-self: flex-end;
+}
 
 /* SECTION SOBRE************************************************************************************************************************************/
 
