@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64 Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="11.6353mm" height="8.8626mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 60.06 45.75"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="500" font-variant="normal" style="fill-rule:nonzero" font-weight="400">
+	<font-face 
+		font-family="DFMincho-W5">
+		<font-face-src>
+			<font-face-name name="DFMincho-W5"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="/" horiz-adv-x="500" d="M468.823 761.668l-365.325 -921.832 -72.1614 0 365.166 921.832 72.3209 0z"/>
+   <glyph unicode="&lt;" horiz-adv-x="500" d="M473.66 -38.0077l-447.321 286.014 0 99.6704 447.321 286.147 0 -128.003 -356.501 -207.979 356.501 -208.006 0 -127.844z"/>
+   <glyph unicode="&gt;" horiz-adv-x="500" d="M473.66 248.007l-447.321 -286.014 0 127.844 356.501 208.006 -356.501 207.979 0 128.003 447.321 -286.147 0 -99.6704z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"DFMincho-W5";font-variant:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+    .str0 {stroke:white;stroke-width:1.03;stroke-miterlimit:22.9256}
+    .fil0 {fill:#006494}
+    .fil2 {fill:#0582CA}
+    .fil1 {fill:white}
+    .fil3 {fill:url(#id0)}
+    .fnt0 {font-weight:normal;font-size:19.42px;font-family:'DFMincho-W5'}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="25.68" y1="25.44" x2="34.63" y2="12.35">
+   <stop offset="0" style="stop-opacity:1; stop-color:#006494"/>
+   <stop offset="0.396078" style="stop-opacity:1; stop-color:#0085C7"/>
+   <stop offset="0.65098" style="stop-opacity:1; stop-color:#ACCBE1"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#00A6FB"/>
+  </linearGradient>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0 str0" x="4.79" y="0.52" width="50.75" height="35.67" rx="2.44" ry="2.44"/>
+  <rect class="fil1" x="8.99" y="4.93" width="42.35" height="27.91" rx="0.54" ry="0.51"/>
+  <path class="fil2 str0" d="M0.66 38.23c7.58,0.04 15.16,0.07 22.74,0.11 0.15,1.15 0.71,1.65 1.62,1.62 2.98,0 5.96,0 8.94,0 1.23,0.04 1.97,-0.43 2.16,-1.51 7.74,0 15.48,0 23.22,0 -1.65,4.75 -4.22,6.76 -7.06,6.79 -14.89,-0.04 -29.78,-0.07 -44.67,-0.11 -3.85,-0.54 -5.97,-3.05 -6.95,-6.9z"/>
+  <text x="15.59" y="24.73"  class="fil3 fnt0">&lt;/&gt;</text>
+ </g>
+</svg>

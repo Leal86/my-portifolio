@@ -1,4 +1,5 @@
-/******************** Configurações globais ********************/
+/**************************************************** CONFIGURAÇÕES GLOBAIS ************************************************************************/
+
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Berkshire+Swash&display=swap');
@@ -6,467 +7,160 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 :root {
-    --cor0: #cee5f2; 
-    --cor1: #accbe1;
-    --cor2: #00a6fb;
-    --cor3: #0582ca;
-    --cor4: #006494;
-    --cor5: #003554;
-    --cor6: #051923;
-
-    --padrao: arial, Verdana, Helvetica, sans-serif;
-    --manuscrita: 'Arizonia', Handwriting;
-    --nomeCabecalho: 'Cinzel', Display;
-    --helloWorld: 'Roboto Mono', Monospace;
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+    --azul-palido: #accbe1;
+    --azul-vivido: #00a6fb;
+    --azul-vivido-escuro: #0582ca;
+    --azul-brilhante: #006494;
+    --azul-profundo: #003554;
+    --azul-profundo-escuro: #051923;
+    --azul-degrade: linear-gradient(97.54deg, #003554 35.49%, #0582ca 165.37%);
+    --branco: #ffffff;
+    --preto: #000000;    
+    --cor-de-fundo: #EBECEE;
+    
+    --fonte-padrao: arial, Verdana, Helvetica, sans-serif;
+    --fonte-manuscrita: 'Arizonia', 'Handwriting';
+    --fonte-Cabecalho: 'Cinzel', 'Display';
+    --fonte-helloWorld: 'Roboto Mono', Monospace;
 }
 
 html {
     scroll-behavior: smooth;
-}
-
-header {
-    background-color: var(--cor6);
-
-}
-
-header > div#container {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    justify-content: space-around;
-
-}
-
-header > div#container > div#img-cabecalho {
-    width: 20%;
-}
-
-header > div#container > div#img-cabecalho > a {
-
-}
-
-header > div#container > div#img-cabecalho > a > img#logo-cabecalho {
-    width: 60px;
-    padding-left: 0px 5px;
-    border: 1px solid red;
-}
-
-header > div#container > div#nome {
-    width: 50%;
-    padding: 0px;
-    border: 1px solid red;
-}
-
-header > div#container > div#nome > a.link-nome {
-    color: var(--cor2);
-    font-size: 1.2em;
-    font-family: var(--nomeCabecalho);
-    text-decoration: none;
+    
 }
 
 body {
-    font-family: var(--padrao);
-    font-size: 1em;
-}
-
-h2 {
-    padding: 35px 0px 15px 0px;
-    font-family: var(--padrao,), Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-p {
-    width: 100%;
-    margin: 20px 0px;
-    font-size: 1em;
-    text-align: justify;
-    text-indent: 30px;
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 
-/******************** Navegação ********************/
 
-i#burguer {
-    color: white;
-    display: inline-block;
-    font-size: 1.8em;
-    text-align: center;
-    padding: 0px 15px;
-    cursor: pointer; 
-    border: 1px solid red;
-    justify-content: end !important;
+/* HEADER ******************************************************************************************************************************************/
+
+.cabecalho {
+    background: var(--azul-degrade);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
-i#burguer:hover {
-    color: var(--cor3);
-    text-shadow: 2px 2px 5px var(--cor2);
-    transition: 0.5s ease-in-out;
+.cabecalho__container {
+    display: flex;
+    align-items: center;
 }
 
-nav {
+.container__logotipo {
+    width: 60px;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.container__titulo {
+    font-family: var(--fonte-Cabecalho);
+    color: var(--branco);
+}
+
+.container__botao {
     display: none;
 }
 
-nav > ul > li > a {
+.container__botao:checked ~ .container__lista-menu {
     display: block;
-    padding: 15px;
-    text-decoration: none;
-    text-align: center;
-    background-color: var(--cor6);
-    color: var(--cor1);
-    border-top: 2px solid var(--cor5);
-}
-
-nav > ul > li > a:hover {
-    color: var(--cor2);
-    text-shadow: 2px 3px 5px var(--cor2);
-    transition: 0.5s ease-in-out;
-}
-
-
-/******************** Section Apresentação ********************/
-
-section#apresentacao {
-    height: 83.2vh;
-    background: black url('../imagens/fundo0.jpg') no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    display: block;
-    position: relative;
     
 }
 
-section#apresentacao > p {
-    width: auto;
-    color: white;
-    font-size: 1.8em;
-    font-family: var(--helloWorld);
-    text-shadow: 1px 1px 9px var(--cor2);
-    text-indent: 0px;
+.container__botao:checked ~ .container__rotulo {
+    background-color: var(--azul-vivido);
+}
+
+.container__rotulo {
+
+}
+
+.container__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/img-menu-branco.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.container__lista-menu {
+    display: none;
     position: absolute;
-    left: 30px;
-    top: 25vh;
-    text-align: left;
+    top: 100%;
+    right: 0;
+    border: 2px solid var(--branco);
+    width: 38vw;
 }
 
-/******************** Section Sobre ********************/
-
-section#sobre {
-    background-color: rgb(245, 242, 242);
-    text-align: center;
-    font-size: 1.2em;
-    line-height: 1.4em;
-    font-weight: 500;
-    
+.lista-menu__item {
+    padding: 0.8em;
+    background-color: var(--azul-profundo);    
 }
 
-section#sobre > div.conteudo-sobre {
-    margin: 0px 30px;
-    padding-bottom: 15px;
+.lista-menu__item:hover {
+    background-color: var(--azul-profundo-escuro);
+    color: var(--azul-vivido);
+    background: var(--azul-vivido);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    transition: ease-in-out 0.5ms;
 }
 
-section#sobre > div.conteudo-sobre > div#img-eu {
-    padding: 10px;
+.lista-menu__link {
+    color: var(--branco);
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
 }
 
-section#sobre > div.conteudo-sobre > div#img-eu > #foto-sobre {
-    border-radius: 20px;
-}
-
-/******************** Section Formação ********************/
-
-section#formacao {
-    background-color: var(--cor6);
-    text-align: center;
-}
-
-section#formacao > h2 {
-    color: white;
-    font-size: 2em;
-}
-
-section#formacao > div.conteudo-formacao {
-    color: whitesmoke;
-    margin: 0px 28px;
-    padding-bottom: 15px;
-    font-size: 1.2em;
-    line-height: 1.4em;
-}
-
-
-/******************** Section Cursos (Certificados) ********************/
-
-section#cursos {
-    background: rgb(243, 241, 241);
-}
-
-
-section#cursos > .slider {
-    overflow: hidden;
-    text-align: center;
-    background: rgb(0, 0, 0);
-    margin-top: 10px;
-    padding-top: 20px;
-}
-
-section#cursos > .slider > .slider-content {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    transition: all 1s ease-in-out;
-    margin:20px 0px 0px 0px;
-}
-
-section#cursos > .slider > .slider-content > .slider-item {
-    flex: 0 0 auto;
-    width: 100%;
-    padding: 5px 30px 20px 30px;
-}
-
-section#cursos > .slider > .slider-content > .slider-item > img {
-    width: 100%;
-}
-
-section#cursos > .slider > input:nth-child(1):checked ~ .slider-content {
-    transform: translateX(0%);
-}
-
-section#cursos > .slider > input:nth-child(2):checked ~ .slider-content {
-    transform: translateX(-100%);
-}
-
-section#cursos > .slider > input:nth-child(3):checked ~ .slider-content {
-    transform: translateX(-200%);
-}
-
-section#cursos > .slider > input:nth-child(4):checked ~ .slider-content {
-    transform: translateX(-300%);
-}
-
-section#cursos > .slider > input:nth-child(5):checked ~ .slider-content {
-    transform: translateX(-400%);
-}
-
-section#cursos > .slider > input:nth-child(6):checked ~ .slider-content {
-    transform: translateX(-500%);
-}
-
-section#cursos > .slider > input:nth-child(7):checked ~ .slider-content {
-    transform: translateX(-600%);
-}
-
-section#cursos > .slider > input:nth-child(8):checked ~ .slider-content {
-    transform: translateX(-700%);
-}
-
-section#cursos > .slider > input:nth-child(9):checked ~ .slider-content {
-    transform: translateX(-800%);
-}
-
-section#cursos > .slider > input:nth-child(10):checked ~ .slider-content {
-    transform: translateX(-900%);
-}
-
-section#cursos > .slider > input:nth-child(11):checked ~ .slider-content {
-    transform: translateX(-1000%);
-}
-
-section#cursos > .slider > input:nth-child(12):checked ~ .slider-content {
-    transform: translateX(-1100%);
-}
-
-/******************** Section Projetos ********************/
-
-section#projetos {
-    background-color: #003554;
-}
-
-section#projetos > div#grupo-projetos {
+.lista-menu__link:hover {
    
-    padding: 5px;
-    text-align: center;
 }
 
-section#projetos > div#grupo-projetos > div.projeto {
-    width: 159px;
-    height: 235px;
-    display: inline-block;  
-    margin: 10px;
-    padding-bottom: 5px;
-    background-color: #030303;
-    
-}
 
-section#projetos > div#grupo-projetos > div.projeto:hover {
-    box-shadow: 0px 1px 30px var(--cor2);
-    transition: 0.6s ease-in;
-    box-sizing: border-box;
-    color: var(--cor2);
-      
-}
 
-section#projetos > div#grupo-projetos > div.projeto > img {
-    width: 100%;
-    padding-bottom: 5px;
-}
 
-section#projetos > div#grupo-projetos > div.projeto > p {
-    display: inline;
-}
 
-section#projetos > div#grupo-projetos > div.projeto > p > a.link-projeto {
-    text-decoration: none;
-    color: var(--cor3);
-    font-weight: 600;
-    font-size: 1.1em;
-    cursor: pointer;
-    /*border: 1px solid red;*/
-}
 
-section#projetos > div#grupo-projetos > div.projeto > p > a.link-projeto:hover {
-    box-sizing: border-box;
-    color: var(--cor2);
-    text-shadow: 1px 1px 20px var(--cor2);
-    transition: 0.5s ease-in-out;
-    
-} 
 
-section#projetos > div#grupo-projetos > div.projeto > a.link-projeto > img.img-projeto:hover {
-    box-sizing: border-box;
-}
 
-section#projetos > div#veja-mais-projetos {
-    text-align: center;
-    display: block;
-    padding: 10px 0px 20px 0px;
-}
 
-section#projetos > div#veja-mais-projetos {
-    display: flex;
-    text-align: center;
-    margin: auto;
-}
 
-section#projetos > div#veja-mais-projetos > a {
-    margin: auto;
-    text-decoration: none;
-    color: var(--cor4);
-    font-size: 1em;
-    font-weight: 600;
-    padding: 10px 20px;
-    cursor: pointer;
-    background-color: #000000;
-    border: 1px solid white;
-    border-radius: 5px;    
-}
 
-section#projetos > div#veja-mais-projetos > a:hover {
-    color: var(--cor2);
-    transition: 0.3s ease-in-out;
-}
 
-/******************** Section Rodapé ********************/
+/* SECTION APRESENTAÇÃO ****************************************************************************************************************************/
 
-footer {
-    background-color: #000000;
-}
 
-footer > div#paginas {
-    width: 100%;
-    display: flex;
-}
+/* SECTION SOBRE************************************************************************************************************************************/
 
-footer > div#paginas > div#menu-rodape {
-    width: 30%;
-    display: block;
-}
 
-footer > div#paginas > div#menu-rodape > h6 {
-    color: white;
-    padding: 10px 10px;
-}
 
-footer > div#paginas > div#menu-rodape > div.menu-rodape1 {
-    width: 50%;
-    display: inline-block;
-    text-align: start;
-    padding-bottom: 15px;
-}
+/* SECTION FORMAÇÃO ********************************************************************************************************************************/
 
-footer > div#paginas > div#menu-rodape > div.menu-rodape2 {
-    width: 45%;
-    display: inline-block;
-    text-align: start;
-    padding-bottom: 15px;
-}
 
-footer > div#paginas > div#menu-rodape > div.menu-rodape1 > ul > li > a {
-    padding: 10px;
-    font-size: 0.6em;
-    text-decoration: none;
-    color: white;
 
-}
+/* SECTION CURSOS (Certificados) *******************************************************************************************************************/
 
-footer > div#paginas > div#menu-rodape > div.menu-rodape2 > ul > li > a {
-    font-size: 0.5em;
-    text-decoration: none;
-    color: white;
-}
 
-footer > div#paginas > div#centro-rodape {
-    width: 40%;
-    text-align: center;
-}
 
-footer > div#paginas > div#menu-rodape > div > ul > li > a:hover {
-    text-decoration: underline;
-}
+/* SECTION PROJETOS ********************************************************************************************************************************/
 
-footer > div#paginas > div#centro-rodape > img {
-    width: 40px;
-    margin-top: 15px;
-}
 
-footer > div#paginas > div#centro-rodape > p {
-    font-size: 0.5em;
-    margin: 15px 0px;
-    color: white;
-    text-align: center;
-    text-indent: 0px;
-}
+/* SECTION RODAPÉ **********************************************************************************************************************************/
 
-footer > div#paginas > div.redes {
-    width: 30%;
-    text-align: center;
-}
 
-footer > div#paginas > div.redes > h6 {
-    color: white;
-    padding: 10px;
-}
 
-footer > div#paginas > div.redes > a > img {
-    display: inline;
-    width: 20px;
-    margin: 2px;
-    margin-top: 8px;
-}
-
-footer > div#paginas > div.redes > a > img:hover{
-    box-shadow: 0px 0px 15px var(--cor2);
-    transition: 0.8s ease-in;
-    box-sizing: border-box;
-    color: var(--cor2);
-}
-
-/* RESPOSNSIVIDADE */
+/*************************************************************** RESPOSNSIVIDADE *******************************************************************/
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
