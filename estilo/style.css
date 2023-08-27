@@ -37,7 +37,6 @@ body {
 }
 
 
-
 /* HEADER ******************************************************************************************************************************************/
 
 .cabecalho {
@@ -129,14 +128,12 @@ body {
 
 /* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
 .banner {
-    background: var(--azul-profundo-escuro) url("../img/fundos/fundo0.jpg") no-repeat center top / contain;
-    height: 100vh;
+    background: var(--azul-profundo-escuro) url("../img/fundos/fundo01.jpg") no-repeat center top / cover;
 }
 
 .banner__textos {
     display: flex;
     flex-direction: column;
-    
 }
 
 .txt-apresentacao {
@@ -145,24 +142,57 @@ body {
     font-size: 1.3em;
 }
 
-.txt-inicio {
-    padding: 1.2em;
-    align-self: flex-start;
+.txt-inicio,.txt-central, .txt-fim {
+    padding: 1.5em;
+   
+}
+
+.txt-inicio{
+
 }
 
 .txt-central {
-    padding: 1em;
     align-self: center;
 }
 
 .txt-fim {
-    padding: 1.5em;
-    align-self: flex-end;
+   align-self: end;
 }
 
 /* SECTION SOBRE************************************************************************************************************************************/
+.sobre {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: var(--azul-profundo-escuro);
+}
 
+.sobre__foto {
+    text-align: center;
+}
 
+.foto__alex {
+    width: 100%;
+}
+
+.conteudo {
+    padding: 1em;
+}
+
+.conteudo__titulo {
+    font-family: var(--fonte-padrao);
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.5em;
+    color: var(--branco);
+}
+
+.conteudo__texto {
+    padding: 5%;
+    text-align: justify;
+    font-family: var(--fonte-padrao);
+    line-height: 1.5em;
+    color: var(--cor-de-fundo);
+}
 
 /* SECTION FORMAÇÃO ********************************************************************************************************************************/
 
