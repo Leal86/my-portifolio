@@ -129,6 +129,7 @@ body {
 /* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
 .banner {
     background: var(--azul-profundo-escuro) url("../img/fundos/fundo01.jpg") no-repeat center top / cover;
+    height: 46.3vh;
 }
 
 .banner__textos {
@@ -144,7 +145,6 @@ body {
 
 .txt-inicio,.txt-central, .txt-fim {
     padding: 1.5em;
-   
 }
 
 .txt-inicio{
@@ -163,7 +163,7 @@ body {
 .sobre {
     display: flex;
     flex-direction: column-reverse;
-    background-color: var(--azul-profundo-escuro);
+    background-color: var(--cor-de-fundo);
 }
 
 .sobre__foto {
@@ -183,7 +183,7 @@ body {
     font-size: 1.5em;
     text-align: center;
     padding: 0.5em;
-    color: var(--branco);
+    color: var(--preto);
 }
 
 .conteudo__texto {
@@ -191,7 +191,7 @@ body {
     text-align: justify;
     font-family: var(--fonte-padrao);
     line-height: 1.5em;
-    color: var(--cor-de-fundo);
+    color: var(--preto);
 }
 
 /* SECTION FORMAÇÃO ********************************************************************************************************************************/
