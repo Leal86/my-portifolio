@@ -127,20 +127,20 @@ body {
 /* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
 .banner {
     background: var(--azul-profundo-escuro) url("../img/fundos/fundo0.jpg") no-repeat center top / cover;
-    height: calc(100vh - 16.1vh);
+    height: calc(100vh - 9.2vh);
 }
 
 .banner__textos {
     display: flex;
     flex-direction: column;
     gap: 4.5em;
-    padding-top: 4em;
+    padding-top: 50%;
 }
 
 .txt {
     color: var(--branco);
     font-family: var(--fonte-helloWorld);
-    font-size: 1.7em;
+    font-size: 1.9em;
     font-weight: 500;
     text-align: center;    
     text-shadow: 0 4px 4px rgb(0, 0, 0, 0.75);
