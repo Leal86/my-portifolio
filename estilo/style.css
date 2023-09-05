@@ -65,6 +65,10 @@ body {
     color: var(--branco);
 }
 
+.cabecalho__img-menu {
+    padding: 0.5em;
+}
+
 .container__botao {
     display: none;
 }
