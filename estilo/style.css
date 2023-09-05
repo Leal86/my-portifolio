@@ -127,14 +127,16 @@ body {
 /* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
 .banner {
     background: var(--azul-profundo-escuro) url("../img/fundos/fundo0.jpg") no-repeat center top / cover;
-    height: calc(100vh - 9.2vh);
+    height: calc(100vh - 8.3vh);
+    
 }
 
 .banner__textos {
     display: flex;
     flex-direction: column;
     gap: 4.5em;
-    padding-top: 50%;
+    padding-top: 15rem;
+    
 }
 
 .txt {
