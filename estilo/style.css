@@ -36,6 +36,8 @@ body {
     font-weight: 400;
 }
 
+
+
 .titulo {
     font-family: var(--fonte-padrao);
     font-size: 1.5em;
@@ -45,7 +47,7 @@ body {
 }
 
 .textos {
-    padding: 0 5% 5% 5%;
+    padding: 0 5% 1% 5%;
     text-align: justify;
     font-family: var(--fonte-padrao);
     line-height: 1.5em;
@@ -200,7 +202,26 @@ body {
 
 /* SECTION CURSOS (Certificados) *******************************************************************************************************************/
 
+.cursos {
+    background-color: ;
+}
 
+.swiper-wrapper {
+    width: 100%;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: .5em 0;
+}
+
+.img-certificado {
+    width: 100%;
+}
+
+.swipper-slide img {
+    width: 100%;
+}
 
 /* SECTION PROJETOS ********************************************************************************************************************************/
 

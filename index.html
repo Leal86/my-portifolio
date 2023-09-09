@@ -8,9 +8,13 @@
     <link rel="shortcut icon" href="logos/favicon.ico" type="image/x-icon">
     <!-- Site de ícones do google -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="estilo/style.css">
-    <link rel="stylesheet" href="estilo/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="img/logos/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/reset.css">
+    <link rel="stylesheet" href="estilo/style.css">
+
+
+
     <title>Portifólio | Alexsander Leal</title>
 </head>
 
@@ -43,7 +47,7 @@
                 </li>
 
                 <li class="lista-menu__item">
-                    <a href="" class="lista-menu__link">Formação</a>
+                    <a href="#formacao" class="lista-menu__link">Formação</a>
                 </li>
 
                 <li class="lista-menu__item">
@@ -117,22 +121,78 @@
         <div class="conteudo">
             <h2 class="titulo ">Sobre</h2>
             <p class="textos">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vitae dignissimos ea molestiae vero quia laudantium, suscipit totam voluptate, velit odio praesentium ducimus quidem perspiciatis beatae, doloribus nulla. Sequi, mollitia.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, distinctio? Fugit libero beatae porro voluptatibus dolorem, atque eaque maiores neque fuga alias quis exercitationem voluptate eos quia, suscipit obcaecati officia?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis vitae dignissimos ea molestiae vero
+                quia laudantium, suscipit totam voluptate, velit odio praesentium ducimus quidem perspiciatis beatae,
+                doloribus nulla. Sequi, mollitia.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, distinctio? Fugit libero beatae porro
+                voluptatibus dolorem, atque eaque maiores neque fuga alias quis exercitationem voluptate eos quia,
+                suscipit obcaecati officia?
             </p>
         </div>
     </section>
 
-    <section class="formacao">
+    <section id="formacao">
         <h2 class="titulo">Formação</h2>
-        
+
         <p class="textos">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, officia itaque ipsa delectus at, voluptatum quod perferendis est, dignissimos provident vitae iure dolores. Reiciendis quia doloribus iste recusandae consequatur deserunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis consectetur deserunt quos optio delectus nulla ipsam veniam, natus tempore corrupti numquam nesciunt, architecto maxime suscipit ea! Molestiae earum aliquam ullam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam amet velit dolorum quibusdam quas molestias nisi accusantium laudantium eius, tempora unde architecto harum expedita illo perspiciatis earum dolorem error iste.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, officia itaque ipsa delectus at, voluptatum
+            quod perferendis est, dignissimos provident vitae iure dolores. Reiciendis quia doloribus iste recusandae
+            consequatur deserunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis consectetur deserunt
+            quos optio delectus nulla ipsam veniam, natus tempore corrupti numquam nesciunt, architecto maxime suscipit
+            ea! Molestiae earum aliquam ullam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam amet
+            velit dolorum quibusdam quas molestias nisi accusantium laudantium eius, tempora unde architecto harum
+            expedita illo perspiciatis earum dolorem error iste.
         </p>
 
     </section>
 
-    
+    <section class="cursos">
+        <h2 class="titulo">Cursos Livres</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img class="img-certificado" src="img/certificados/1-Logica-de-programacao.jpg" alt="Certificado do curso de lógica de programação">
+                </div>
+                
+                <div class="swiper-slide">
+                    <img class="img-certificado" src="img/certificados/2-Cert-Java-Básicon.jpg" alt="Certificado do curso de java básico">
+                </div>
+                
+                <div class="swiper-slide">
+                    <img class="img-certificado" src="img/certificados/3-Git-para-iniciante.jpg" alt="Certificado do curso de Git para iniciantes">
+                </div>
+                ...
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 10,
+            slidePreview: 1,
+            pagination: {
+                el: '.swipper-pagination',
+                type:'bullets',
+            },
+        });
+    </script>
 </body>
 
 </html>
