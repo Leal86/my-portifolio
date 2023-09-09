@@ -36,6 +36,21 @@ body {
     font-weight: 400;
 }
 
+.titulo {
+    font-family: var(--fonte-padrao);
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1em;
+    color: var(--preto);
+}
+
+.textos {
+    padding: 0 5% 5% 5%;
+    text-align: justify;
+    font-family: var(--fonte-padrao);
+    line-height: 1.5em;
+    color: var(--preto);
+}
 
 /* HEADER ******************************************************************************************************************************************/
 
@@ -177,21 +192,7 @@ body {
     padding: 1em;
 }
 
-.conteudo__titulo {
-    font-family: var(--fonte-padrao);
-    font-size: 1.5em;
-    text-align: center;
-    padding: 0.5em;
-    color: var(--preto);
-}
 
-.conteudo__texto {
-    padding: 5%;
-    text-align: justify;
-    font-family: var(--fonte-padrao);
-    line-height: 1.5em;
-    color: var(--preto);
-}
 
 /* SECTION FORMAÇÃO ********************************************************************************************************************************/
 
