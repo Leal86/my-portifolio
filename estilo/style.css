@@ -210,17 +210,26 @@ body {
     width: 100%;
 }
 
-.swiper-pagination {
+.swipper-pagination {
     position: initial;
     margin: .5em 0;
+    text-align: center;
 }
 
 .img-certificado {
     width: 100%;
 }
 
+.swipper-slide {
+    
+}
+
 .swipper-slide img {
     width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
 }
 
 /* SECTION PROJETOS ********************************************************************************************************************************/
