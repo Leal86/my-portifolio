@@ -38,15 +38,15 @@ body {
 
 
 
-.titulo {
+h2 {
     font-family: var(--fonte-padrao);
     font-size: 1.5em;
     text-align: center;
-    padding: 1em;
     color: var(--preto);
+    padding: .5em 0;
 }
 
-.textos {
+p {
     padding: 0 5% 1% 5%;
     text-align: justify;
     font-family: var(--fonte-padrao);
@@ -179,7 +179,7 @@ body {
 .sobre {
     display: flex;
     flex-direction: column-reverse;
-    background-color: var(--cor-de-fundo);
+    background-color: var(--azul-profundo);
 }
 
 .sobre__foto {
@@ -190,10 +190,22 @@ body {
     width: 100%;
 }
 
-.conteudo {
+.sobre__conteudo {
     padding: 1em;
 }
 
+.conteudo__titulo {
+    color: var(--azul-vivido);
+    
+    font-size: 1.6em;
+}
+
+.conteudo__texto {
+    color: var(--azul-vivido-escuro);
+    font-size: 1.1em;
+    font-family: var(--fonte-padrao);
+    font-weight: 400;
+}
 
 
 /* SECTION FORMAÇÃO ********************************************************************************************************************************/
@@ -203,7 +215,11 @@ body {
 /* SECTION CURSOS (Certificados) *******************************************************************************************************************/
 
 .cursos {
-    background-color: ;
+    background-color: var(--preto);
+}
+
+.cursos__titulo {
+
 }
 
 .swiper-wrapper {
