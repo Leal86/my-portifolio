@@ -190,17 +190,16 @@ p {
     width: 100%;
 }
 
-.sobre__conteudo {
+.sobre__descricao {
     padding: 1em;
 }
 
-.conteudo__titulo {
+.descricao__titulo {
     color: var(--azul-vivido);
-    
     font-size: 1.6em;
 }
 
-.conteudo__texto {
+.descricao__texto {
     color: var(--azul-vivido-escuro);
     font-size: 1.1em;
     font-family: var(--fonte-padrao);
@@ -209,18 +208,32 @@ p {
 
 
 /* SECTION FORMAÇÃO ********************************************************************************************************************************/
+.formacao {
+    background-color: var(--preto);
+    padding: .5em;
+}
+
+.formacao__titulo {
+    color: var(--branco);
+    padding: 1em;
+}
+
+.formacao__texto {
+    color: var(--azul-vivido-escuro);
+}
 
 
 
 /* SECTION CURSOS (Certificados) *******************************************************************************************************************/
 
 .cursos {
-    background-color: var(--preto);
+    background-color: var(--branco);
 }
 
 .cursos__titulo {
 
 }
+
 
 .swiper-wrapper {
     width: 100%;
