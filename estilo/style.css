@@ -15,8 +15,9 @@
     --azul-profundo-escuro: #051923;
     --azul-degrade: linear-gradient(97.54deg, #003554 35.49%, #0582ca 165.37%);
     --branco: #ffffff;
-    --preto: #000000;    
-    --cor-de-fundo: #EBECEE;
+    --preto: #000000;
+    --textos-icones: #4A4A4A;    
+    --cor-de-fundo: #F5F7FA;
     
     --fonte-padrao: arial, Verdana, Helvetica, sans-serif;
     --fonte-manuscrita: 'Arizonia', 'Handwriting';
@@ -37,21 +38,21 @@ body {
 }
 
 
-
-h2 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--fonte-padrao);
-    font-size: 1.5em;
     text-align: center;
-    color: var(--preto);
+    color: var(--textos-icones);
     padding: .5em 0;
 }
 
 p {
-    padding: 0 5% 1% 5%;
+    padding: 0 5%;
     text-align: justify;
     font-family: var(--fonte-padrao);
     line-height: 1.5em;
-    color: var(--preto);
+    color: var(--textos-icones);
+    font-size: 1em;
+    
 }
 
 /* HEADER ******************************************************************************************************************************************/
@@ -64,53 +65,53 @@ p {
     position: relative;
 }
 
-.cabecalho__container {
+.cabecalho_container {
     display: flex;
     align-items: center;
 }
 
-.container__logotipo {
+.cabecalho_container_logotipo {
     width: 60px;
 }
 
-.container__imagens {
+.cabecalho_container_imagens {
     padding: 1em;
 }
 
-.container__titulo {
+.cabecalho_container_titulo {
     font-family: var(--fonte-Cabecalho);
     color: var(--branco);
 }
 
-.cabecalho__img-menu {
+.cabecalho_cabecalho_img-menu {
     padding: 0.5em;
 }
 
-.container__botao {
+.cabecalho_container_botao {
     display: none;
 }
 
-.container__botao:checked ~ .container__lista-menu {
+.cabecalho_container_botao:checked ~ .cabecalho_container_lista-menu {
     display: block;
     
 }
 
-.container__botao:checked ~ .container__rotulo {
+.cabecalho_container_botao:checked ~ .container_rotulo {
     background-color: var(--azul-vivido);
 }
 
-.container__rotulo {
+.cabecalho_container_rotulo {
 
 }
 
-.container__menu-hamburguer {
+.cabecalho_container_menu-hamburguer {
     width: 24px;
     height: 24px;
     background: url("../img/img-menu-branco.svg") no-repeat center center;
     display: inline-block;
 }
 
-.container__lista-menu {
+.cabecalho_container_lista-menu {
     display: none;
     position: absolute;
     top: 100%;
@@ -119,12 +120,12 @@ p {
     width: 38vw;
 }
 
-.lista-menu__item {
+.cabecalho_lista-menu_item {
     padding: 0.8em;
     background-color: var(--azul-profundo);    
 }
 
-.lista-menu__item:hover {
+.cabecalho_cabecalho_lista-menu_item:hover {
     background-color: var(--azul-profundo-escuro);
     color: var(--azul-vivido);
     background: var(--azul-profundo-escuro);
@@ -133,13 +134,13 @@ p {
     transition: ease-in-out 0.5s;
 }
 
-.lista-menu__link {
+.cabecalho_lista-menu_link {
     color: var(--branco);
     text-decoration: none;
     font-family: var(--fonte-padrao);
 }
 
-.lista-menu__link:hover {
+.cabecalho_lista-menu_link:hover {
    color: var(--azul-vivido);
    padding-left: 1em;
    transition: 0.3s ease-in-out;
@@ -153,13 +154,21 @@ p {
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-    
-    
 }
 
+.banner_foto {
+    text-align: center;
+}
 
+.banner_foto_alex {
+    border-radius: 50%;
+    border: 5px solid var(--azul-vivido);
+    box-shadow: 0 4px 8px rgba(2, 230, 142, 0.1);
+    width: 50%;
+    margin-bottom: 0%;
+}
 
-.txt {
+.banner_txt {
     color: var(--branco);
     font-family: var(--fonte-helloWorld);
     font-size: 2em;
@@ -169,8 +178,9 @@ p {
    
 }
 
-.txt-nome {
+.banner_txt-nome {
     font-weight: 600;
+    color: var(--azul-vivido);
 }
 
 
@@ -178,47 +188,44 @@ p {
 .sobre {
     display: flex;
     flex-direction: column-reverse;
-    background-color: var(--azul-profundo);
+    background-color: var(--cor-de-fundo);
+    margin-bottom: -3px;
 }
 
-.sobre__foto {
-    text-align: center;
-}
-
-.foto__alex {
-    width: 100%;
-}
-
-.sobre__descricao {
+.sobre_descricao {
     padding: 1em;
 }
 
-.descricao__titulo {
-    color: var(--azul-vivido);
-    font-size: 1.6em;
+.sobre_descricao_titulo {
+    color: var(--textos-icones);
+    font-size: 1.5em;
 }
 
-.descricao__texto {
-    color: var(--azul-vivido-escuro);
-    font-size: 1.1em;
-    font-family: var(--fonte-padrao);
-    font-weight: 400;
+.sobre_descricao_texto {
+    padding-bottom: 5%;
 }
 
 
 /* SECTION FORMAÇÃO ********************************************************************************************************************************/
 .formacao {
     background-color: var(--preto);
-    padding: .5em;
+    padding: .8em;
 }
 
-.formacao__titulo {
-    color: var(--branco);
-    padding: 1em;
+.formacao_titulo {
+    font-size: 1.5em;
+    color: var(--azul-vivido);
 }
 
-.formacao__texto {
+.formacao_titulo_graduacao {
     color: var(--azul-vivido-escuro);
+    font-size: 1.2em;
+    padding: 1.2em 0;
+}
+
+.formacao_texto {
+    color: var(--branco);
+    padding-bottom: 0.7em;
 }
 
 
@@ -229,8 +236,9 @@ p {
     background-color: var(--branco);
 }
 
-.cursos__titulo {
-
+.cursos_titulo {
+    padding: 1.2em 0;
+    font-size: 1.5em;
 }
 
 
@@ -244,7 +252,7 @@ p {
     text-align: center;
 }
 
-.img-certificado {
+.cursos_img-certificado {
     width: 100%;
 }
 
@@ -262,10 +270,53 @@ p {
 
 /* SECTION PROJETOS ********************************************************************************************************************************/
 
-.lista__img-projeto {
-    width: 90%;
-    padding: 1em;
+.projetos {
+
+    
 }
+
+.projetos_titulo {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1em 0;
+    color: var(--textos-icones);
+}
+
+.projetos_lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projetos_lista_nome-projeto {
+    display: block;
+    font-size: 0.9em;
+    flex-direction: column;
+    text-align: center;
+}
+
+.projetos_lista_item {
+    width: 38%;
+    margin: 0.3em;
+    padding: 0.5em;
+    background-color: var(--azul-profundo);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+   
+}
+
+.projetos_lista_img-projeto {
+    width: 60%;
+    padding: 0.5em;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* SECTION RODAPÉ **********************************************************************************************************************************/
 
 
