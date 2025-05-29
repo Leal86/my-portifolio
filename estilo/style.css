@@ -271,8 +271,7 @@ p {
 /* SECTION PROJETOS ********************************************************************************************************************************/
 
 .projetos {
-
-    
+    background: var(--azul-profundo-escuro); 
 }
 
 .projetos_titulo {
@@ -298,22 +297,42 @@ p {
 }
 
 .projetos_lista_item {
-    width: 38%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    width: 40%;
+    height: 30vh;
     margin: 0.3em;
     padding: 0.5em;
     background-color: var(--azul-profundo);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     text-align: center;
-   
+}
+
+.projetos_lista_item:hover {
+    transform: scale(1.05);
+    background-color: var(--azul-vivido-escuro);
+}
+
+.projeto_lista_item_link {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 700;
+}
+
+.projeto_lista_item_link:hover {
+    color: var(--azul-profundo-escuro);
+    text-decoration: underline;
 }
 
 .projetos_lista_img-projeto {
-    width: 60%;
-    padding: 0.5em;
-    background-size: cover;
-    background-position: center;
+    align-self: center;
+    width: 80%;
+    background: center center / cover no-repeat;
+    background-size: contain;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
