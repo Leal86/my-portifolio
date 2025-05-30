@@ -277,8 +277,8 @@ p {
 .projetos_titulo {
     text-align: center;
     font-size: 1.5em;
-    padding: 1em 0;
-    color: var(--textos-icones);
+    font-weight: 700;
+    color: var(--branco);
 }
 
 .projetos_lista {
@@ -287,6 +287,7 @@ p {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    padding: 2em 0;
 }
 
 .projetos_lista_nome-projeto {
@@ -298,14 +299,11 @@ p {
 
 .projetos_lista_item {
     display: flex;
-    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 0.5em;
-    width: 40%;
-    height: 30vh;
-    margin: 0.3em;
-    padding: 0.5em;
+    width: 180px;
+    margin: 0.5em 0.12em 0.5em 0.25em;
     background-color: var(--azul-profundo);
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
@@ -334,6 +332,7 @@ p {
     background: center center / cover no-repeat;
     background-size: contain;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 /* SECTION RODAPÉ **********************************************************************************************************************************/
