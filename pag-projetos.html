@@ -6,48 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="logos/favicon.ico" type="image/x-icon">
-    <!-- Site de ícones do google -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logos/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/reset.css">
     <link rel="stylesheet" href="estilo/style.css">
     <title>Portifólio | Alexsander Leal</title>
 </head>
 
-<body onresize="mudouTamanho()">
-    <header>
+<body>
+    <header class="cabecalho">
 
-        <div id="container">
+        <div class="cabecalho_container cabecalho_logo-cabecalho">
+            <img src="img/logos/logo-cabecalho.svg" class="cabecalho_container_logotipo cabecalho_container_imagens"
+                alt="Logotipo do Portifólio">
+        </div>
 
-            <div id="img-cabecalho">
-                <a href="index.html">
-                    <img src="img/logos/logo-cabecalho.svg" id="logo-cabecalho" alt="Logotipo">
-                </a>
-            </div>
-            
-            <div id="nome">
-                <a href="https://www.linkedin.com/in/alexsanderleal86/" target="_blank" class="link-nome">Alexsander Leal</a>
-            </div>
+        <div class="cabecalho_cabecalho_container">
+            <h1 class="cabecalho_container_titulo">Meu Portifólio</h1>
+        </div>
+
+        <div class="cabecalho_cabecalho_container cabecalho_cabecalho_img-menu">
+            <input type="checkbox" id="menu" class="cabecalho_container_botao">
+
+            <label for="menu" class="cabecalho_container_rotulo">
+                <span class="cabecalho_container_menu-hamburguer cabecalho_container_imagens"></span>
+            </label>
+
+            <ul class="cabecalho_container_lista-menu">
+                <li class="cabecalho_lista-menu_item">
+                    <a href="index.html" class="cabecalho_lista-menu_link">Home</a>
+                </li>
+
+                <li class="cabecalho_lista-menu_item">
+                    <a href="#about" class="cabecalho_lista-menu_link">Sobre</a>
+                </li>
+
+                <li class="cabecalho_lista-menu_item">
+                    <a href="#academic-education" class="cabecalho_lista-menu_link">Formação</a>
+                </li>
+
+                <li class="cabecalho_lista-menu_item">
+                    <a href="" class="cabecalho_lista-menu_link">Cursos</a>
+                </li>
+
+                <li class="cabecalho_lista-menu_item">
+                    <a href="" class="cabecalho_lista-menu_link">Projetos</a>
+                </li>
+
+                <li class="cabecalho_lista-menu_item">
+                    <a href="" class="cabecalho_lista-menu_link">Contatos</a>
+                </li>
+            </ul>
 
         </div>
 
     </header>
-
-    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
-
-    <menu id="itens">
-
-        <a class="opcoes" onclick="clickMenu()" href="index.html">Home</a>
-
-        <a class="opcoes" onclick="clickMenu()" href="#sobre">About Me</a>
-
-        <a class="opcoes" onclick="clickMenu()" href="#formacao">Formação</a>
-
-        <a class="opcoes" onclick="clickMenu()" href="#cursos">Cursos</a>
-
-        <a class="opcoes" onclick="clickMenu()" href="#projetos">Projetos</a>
-
-        <a class="opcoes" onclick="clickMenu()" href="#contato">Contato</a>
-
-    </menu>
 
     <main>
         <section id="projetos">

@@ -16,9 +16,9 @@
     --azul-degrade: linear-gradient(97.54deg, #003554 35.49%, #0582ca 165.37%);
     --branco: #ffffff;
     --preto: #000000;
-    --textos-icones: #4A4A4A;    
+    --textos-icones: #4A4A4A;
     --cor-de-fundo: #F5F7FA;
-    
+
     --fonte-padrao: arial, Verdana, Helvetica, sans-serif;
     --fonte-manuscrita: 'Arizonia', 'Handwriting';
     --fonte-Cabecalho: 'Cinzel', 'Display';
@@ -27,7 +27,7 @@
 
 html {
     scroll-behavior: smooth;
-    
+
 }
 
 body {
@@ -38,11 +38,22 @@ body {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--fonte-padrao);
     text-align: center;
     color: var(--textos-icones);
-    padding: .5em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 700; 
+    padding: 1.2em;
+
 }
 
 p {
@@ -52,7 +63,6 @@ p {
     line-height: 1.5em;
     color: var(--textos-icones);
     font-size: 1em;
-    
 }
 
 /* HEADER ******************************************************************************************************************************************/
@@ -91,18 +101,16 @@ p {
     display: none;
 }
 
-.cabecalho_container_botao:checked ~ .cabecalho_container_lista-menu {
+.cabecalho_container_botao:checked~.cabecalho_container_lista-menu {
     display: block;
-    
+
 }
 
-.cabecalho_container_botao:checked ~ .container_rotulo {
+.cabecalho_container_botao:checked~.container_rotulo {
     background-color: var(--azul-vivido);
 }
 
-.cabecalho_container_rotulo {
-
-}
+.cabecalho_container_rotulo {}
 
 .cabecalho_container_menu-hamburguer {
     width: 24px;
@@ -122,7 +130,7 @@ p {
 
 .cabecalho_lista-menu_item {
     padding: 0.8em;
-    background-color: var(--azul-profundo);    
+    background-color: var(--azul-profundo);
 }
 
 .cabecalho_cabecalho_lista-menu_item:hover {
@@ -141,9 +149,9 @@ p {
 }
 
 .cabecalho_lista-menu_link:hover {
-   color: var(--azul-vivido);
-   padding-left: 1em;
-   transition: 0.3s ease-in-out;
+    color: var(--azul-vivido);
+    padding-left: 1em;
+    transition: 0.3s ease-in-out;
 }
 
 /* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
@@ -173,9 +181,9 @@ p {
     font-family: var(--fonte-helloWorld);
     font-size: 2em;
     font-weight: 500;
-    text-align: center; 
+    text-align: center;
     text-shadow: 0 4px 4px rgb(0, 0, 0, 0.75);
-   
+
 }
 
 .banner_txt-nome {
@@ -198,7 +206,6 @@ p {
 
 .sobre_descricao_titulo {
     color: var(--textos-icones);
-    font-size: 1.5em;
 }
 
 .sobre_descricao_texto {
@@ -213,8 +220,8 @@ p {
 }
 
 .formacao_titulo {
-    font-size: 1.5em;
     color: var(--azul-vivido);
+    padding: 1.3em 0 0.3em 0;
 }
 
 .formacao_titulo_graduacao {
@@ -236,10 +243,7 @@ p {
     background-color: var(--branco);
 }
 
-.cursos_titulo {
-    padding: 1.2em 0;
-    font-size: 1.5em;
-}
+.cursos_titulo {}
 
 
 .swiper-wrapper {
@@ -256,30 +260,25 @@ p {
     width: 100%;
 }
 
-.swipper-slide {
-    
-}
+.swipper-slide {}
 
 .swipper-slide img {
     width: 100%;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
     display: none;
 }
 
 /* SECTION PROJETOS ********************************************************************************************************************************/
 
 .projetos {
-    background: var(--azul-profundo-escuro); 
+    background: var(--azul-profundo-escuro);
 }
 
 .projetos_titulo {
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: 700;
     color: var(--branco);
-    padding: 1em;
 }
 
 .projetos_lista {
@@ -313,6 +312,10 @@ p {
     text-align: center;
 }
 
+.projetos_lista_item_esconder {
+    display: none;
+}
+
 .projetos_lista_item:hover {
     transform: scale(1.05);
     background-color: var(--azul-vivido-escuro);
@@ -337,36 +340,78 @@ p {
     background-size: contain;
     border-radius: 8px;
     border: 1px solid var(--azul-vivido);
-    
+
+}
+
+/* SECTION CONTATO **********************************************************************************************************************************/
+
+.contato {
+    background-color: var(--cor-de-fundo);
+    padding: 2em 0;
+}
+
+.contato_titulo {
+    color: var(--textos-icones);
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 1em;
+}
+
+.contato_formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato_input {
+    margin: 0.5em 0;
+    padding: 0.8em;
+    border: 1px solid var(--textos-icones);
+    border-radius: 4px;
+    width: 80%;
+}
+
+.contato_botao {
+    background-color: var(--azul-vivido);
+    color: var(--branco);
+    padding: 0.8em 1.2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contato_botao:hover {
+    background-color: var(--azul-vivido-escuro);
 }
 
 /* SECTION RODAPÉ **********************************************************************************************************************************/
 
+.rodape {
+    background: var(--preto) url("../img/logos/logo.png") no-repeat center center / contain;
+    color: var(--branco);
+    text-align: center;
+    padding: 1em 0;
+}
 
+.rodape_texto {
+    margin: 0.5em 0;
+}
 
 /*************************************************************** RESPOSNSIVIDADE *******************************************************************/
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    
-}
+@media only screen and (max-width: 600px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
+@media only screen and (min-width: 1200px) {}
