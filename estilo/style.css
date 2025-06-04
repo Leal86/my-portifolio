@@ -51,7 +51,7 @@ h6 {
 
 h2 {
     font-size: 1.5em;
-    font-weight: 700; 
+    font-weight: 700;
     padding: 1.2em;
 
 }
@@ -301,10 +301,11 @@ p {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 0.5em;
+    gap: 0.8em;
     width: 180px;
     height: 250px;
     margin-bottom: 1.2em;
+    padding-top: 0.5em;
     background-color: var(--cor-de-fundo);
     border-radius: 10px;
     box-shadow: 0 0 8px 4px var(--azul-vivido-escuro);
@@ -335,6 +336,7 @@ p {
 .projetos_lista_img-projeto {
     align-self: center;
     width: 74%;
+    margin-top: 0.5em;
     margin-bottom: 0.6em;
     background: center center / cover no-repeat;
     background-size: contain;
@@ -343,48 +345,66 @@ p {
 
 }
 
-/* SECTION CONTATO **********************************************************************************************************************************/
+/* SECTION CONTATOS **********************************************************************************************************************************/
 
-.contato {
-    background-color: var(--cor-de-fundo);
+.contatos {
+    background: var(--branco);
+    height: 30vh;
+}
+
+.contatos_titulo {}
+
+.contatos_lista {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     padding: 2em 0;
 }
 
-.contato_titulo {
-    color: var(--textos-icones);
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: 700;
-    padding: 1em;
-}
-
-.contato_formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contato_input {
+.contatos_lista_item {
     margin: 0.5em 0;
-    padding: 0.8em;
-    border: 1px solid var(--textos-icones);
-    border-radius: 4px;
-    width: 80%;
 }
 
-.contato_botao {
-    background-color: var(--azul-vivido);
-    color: var(--branco);
-    padding: 0.8em 1.2em;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+
+.contatos_lista_item_link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--textos-icones);
+    width: 48px; /* ajuste para o tamanho do seu ícone */
+    height: 48px; /* ajuste para o tamanho do seu ícone */
 }
 
-.contato_botao:hover {
-    background-color: var(--azul-vivido-escuro);
+.contatos_lista_item_img,
+.contatos_lista_item_img-cor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* garante que as imagens fiquem sobrepostas */
+    height: 100%;
+    transition: opacity 0.3s;
+    pointer-events: none; /* evita problemas de hover */
 }
+
+.contatos_lista_item_img {
+    opacity: 1;
+    z-index: 1;
+}
+
+.contatos_lista_item_img-cor {
+    opacity: 0;
+    z-index: 2;
+}
+
+.contatos_lista_item_link:hover .contatos_lista_item_img {
+    opacity: 0;
+}
+
+.contatos_lista_item_link:hover .contatos_lista_item_img-cor {
+    opacity: 1;
+}
+
 
 /* SECTION RODAPÉ **********************************************************************************************************************************/
 
