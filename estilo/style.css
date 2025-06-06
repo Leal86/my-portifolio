@@ -420,17 +420,16 @@ p {
     text-align: center;
     padding:  0;
     overflow: hidden;
-    height: 38vh;
+    height: 35vh;
 }
 
 .rodape::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: url("../img/logos/logo-1.png") no-repeat center center;
-    background-size: 350px auto;
-    /* ajuste o valor conforme desejar */
-    opacity: 0.2;
+    background: url("../img/logos/logo-1.png") no-repeat center center / cover;
+    background-size: 300px auto; /* ajuste o valor conforme desejar */
+    opacity: 0.3;
     z-index: 0;
     pointer-events: none;
 }
@@ -445,7 +444,7 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 30vh;
+    height: 27vh;
 }
 
 .rodape_container_item {
@@ -453,19 +452,16 @@ p {
     width: 50%;
 }
 
-.item-1,
-.item-2 {
+.item-1{
     width: 50%;
+    align-items: flex-start;
 }
 
 .rodape_container_item_titulo-paginas {
     color: var(--branco);
-    margin: 1em 0 0.5em 2em;
+    font-weight: 600;
+    margin: 0 0 0.5em 2em;
     text-align: start;
-}
-
-.rodape_container_item_titulo_social-media {
-    
 }
 
 .rodape_container_lista-menu {
@@ -475,8 +471,7 @@ p {
 
 .rodape_container_lista-menu_item{
     text-align: start;
-    padding-left: 1.7em;
-    padding-bottom: 0.5em;
+    padding: 0 0 0.5em 1.7em;
 }
 
 .rodape_container_item_lista-menu_link {
@@ -485,9 +480,61 @@ p {
     font-size: 1em;
 }
 
+.item-2 {
+    width: 20%;
+    align-items: flex-start;
+}
 
-.item-3 {
-    display: none;
+.rodape_container_item_titulo-social-media {
+    color: var(--branco);
+    font-weight: 600;
+    margin: 0 2em 0em 0;
+    padding-top: 0.5em;
+    text-align: center;
+}
+
+.rodape_container_item_lista-social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 1em 1em 0.5em 0;
+}
+
+.rodape_container_item_lista-social-media_item {
+    text-align: start;
+    padding: 0.5em 0 0 1em;
+}
+
+.rodape_container_item_lista-social-media_img {
+    width: 25px;
+    margin-right: 0.5em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rodape_item-3 {
+    position: relative;
+    top: -2em;
+}
+
+.rodape_item-3_img_rodape {
+    padding: 1em 0 0.5em 0;
+}
+
+.rodape_item-3__link {
+    color: var(--azul-vivido);
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    font-weight: 600;
+}
+
+.rodape_item-3__text {
+    color: var(--branco);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.8em;
+    padding: 0.5em 0;
 }
 
 /*************************************************************** RESPOSNSIVIDADE *******************************************************************/
