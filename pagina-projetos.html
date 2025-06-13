@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="img/logos/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilo/reset.css">
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/style-media-queries.css">
     <title>Portifólio | Alexsander Leal</title>
 </head>
 
@@ -64,34 +65,36 @@
     <main>
         <section id="projetos">
             <h2>Projetos</h2>
-            
+
             <div id="grupo-projetos">
                 <div class="projeto">
                     <iframe src="https://leal86.github.io/cordel-moderno-paralax/" frameborder="0" name="frame">
-                        <img src="img/projetos/projeto-cordelModerno-site.png" class="img-projeto" alt="Imagem do Projeto">    
+                        <img src="img/projetos/projeto-cordelModerno-site.png" class="img-projeto"
+                            alt="Imagem do Projeto">
                         <p>Esse navegador não é compactível com essa funcionalidade!</p>
                     </iframe>
                     <p>
                         <a href="" class="link-projeto">Projeto Cordel</a>
                     </p>
                 </div>
-                
+
                 <div class="projeto">
                     <iframe src="https://leal86.github.io/android-tech-insights/" frameborder="0" name="frame">
-                        <img src="img/projetos/projeto-androidTechInsights-site.png" class="img-projeto" alt="Imagem do Projeto">    
+                        <img src="img/projetos/projeto-androidTechInsights-site.png" class="img-projeto"
+                            alt="Imagem do Projeto">
                         <p>Esse navegador não é compactível com essa funcionalidade!</p>
                     </iframe>
                     <p>
                         <a href="" class="link-projeto">Projeto Android</a>
                     </p>
                 </div>
-                
+
                 <div class="projeto">
                     <a href="#" class="link-projeto" target="frame">
                         <img src="imagens/img-em-breve.jpg" class="img-projeto" alt="Imagem do Projeto">
                     </a>
                 </div>
-                
+
                 <div class="projeto">
                     <a href="#" class="link-projeto" target="frame">
                         <img src="img/fundos/img-em-breve.jpg" class="img-projeto" alt="Imagem do Projeto">
@@ -103,7 +106,7 @@
                         <img src="img/fundos/img-em-breve.jpg" class="img-projeto" alt="Imagem do Projeto">
                     </a>
                 </div>
-                
+
                 <div class="projeto">
                     <a href="#" class="link-projeto" target="frame">
                         <img src="img/fundos/img-em-breve.jpg" class="img-projeto" alt="Imagem do Projeto">
@@ -111,10 +114,90 @@
                 </div>
 
             </div>
-            
+
         </section>
     </main>
 
+    <footer class="rodape">
+        <div class="rodape_container">
+            <div class="rodape_container_item item-1">
+                <h5 class="rodape_container_item_titulo-paginas">Paginas</h5>
+
+                <ul class="rodape_container_lista-menu">
+                    <li class="rodape_container_lista-menu_item">
+                        <a href="index.html" class="rodape_container_item_lista-menu_link">Home</a>
+                    </li>
+
+                    <li class="rodape_container_lista-menu_item">
+                        <a href="#about" class="rodape_container_item_lista-menu_link">Sobre</a>
+                    </li>
+                    <li class="rodape_container_lista-menu_item">
+                        <a href="#formation" class="rodape_container_item_lista-menu_link">Formação</a>
+                    </li>
+
+                    <li class="rodape_container_lista-menu_item">
+                        <a href="#additional-training" class="rodape_container_item_lista-menu_link">Cursos</a>
+                    </li>
+
+                    <li class="rodape_container_lista-menu_item">
+                        <a href="#projects" class="rodape_container_item_lista-menu_link">Projetos</a>
+                    </li>
+
+                    <li class="rodape_container_lista-menu_item">
+                        <a href="#contacts" class="rodape_container_item_lista-menu_link">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="rodape_container_item item-2">
+                <h5 class="rodape_container_item_titulo-social-media">Redes</h5>
+
+                <ul class="rodape_container_item_lista-social-media">
+                    <li class="rodape_container_item_lista-social-media_item">
+                        <a class="rodape_container_item_lista-social-media_link"
+                            href="https://www.instagram.com/leal86/" target="_blank">
+                            <img class="rodape_container_item_lista-social-media_img"
+                                src="img/redes/logo-instagram-d.jpg" alt="Logo do Instagram">
+                        </a>
+                    </li>
+
+                    <li class="rodape_container_item_lista-social-media_item">
+                        <a class="rodape_container_item_lista-social-media_link" href="https://github.com/leal86"
+                            target="_blank">
+                            <img class="rodape_container_item_lista-social-media_img" src="img/redes/logo-github-b.png"
+                                alt="Logo do GitHub">
+                        </a>
+                    </li>
+
+                    <li class="rodape_container_item_lista-social-media_item">
+                        <a class="rodape_container_item_lista-social-media_link"
+                            href="https://www.linkedin.com/in/leal86/" target="_blank">
+                            <img class="rodape_container_item_lista-social-media_img"
+                                src="img/redes/logo-linkedin-d.jpg" alt="Logo do LinkedIn">
+                        </a>
+                    </li>
+
+                    <li class="rodape_container_item_lista-social-media_item">
+                        <a class="rodape_container_item_lista-social-media_link" href="mailto:leal86@gmail.com"
+                            target="_blank">
+                            <img class="rodape_container_item_lista-social-media_img"
+                                src="img/redes/logo-email-cor-2.png" alt="Logo do E-mail">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rodape_item-3">
+
+            <img class="rodape_item-3_img_rodape" src="img/logos/logo-rodape.svg" alt="Logotipo de computador">
+            <p class="rodape_item-3__text">Desenvolvido por
+                <a class="rodape_item-3__link" href="" target="_blank">Alexsander Leal</a>
+            </p>
+
+        </div>
+
+    </footer>
 
 
     <script>

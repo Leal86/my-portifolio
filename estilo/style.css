@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Berkshire+Swash&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url(../css/estilo.media-queries.css);
 
 :root {
     --azul-palido: #accbe1;
@@ -216,7 +217,7 @@ p {
 /* SECTION FORMAÇÃO ********************************************************************************************************************************/
 .formacao {
     background-color: var(--preto);
-    padding: .8em;
+    padding: 1em;
 }
 
 .formacao_titulo {
@@ -227,7 +228,7 @@ p {
 .formacao_titulo_graduacao {
     color: var(--azul-vivido-escuro);
     font-size: 1.2em;
-    padding: 1.2em 0;
+    padding: 1.2em 1em;
 }
 
 .formacao_texto {
@@ -342,7 +343,36 @@ p {
     background-size: contain;
     border-radius: 8px;
     border: 1px solid var(--azul-vivido);
+}
 
+.projetos_texto {
+    color: var(--branco);
+    margin: 1em;
+    padding: 0.8em 1em;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.projetos_caixa {
+    display: inline-block;
+    background-color: var(--azul-vivido-escuro);
+    text-align: center;
+    padding: 1.3em 0;
+    width: 100%;
+}
+
+.projetos_caixa_link {   
+    text-decoration: none;
+    color: var(--cor-de-fundo);
+    font-weight: 600;
+    font-size: 1em;
+    font-family: var(--fonte-helloWorld);
+    transition: color 0.2s ease-in-out; 
+}
+
+.projetos_caixa_link:hover {
+    color: var(--azul-profundo-escuro);
+    text-decoration: underline;
 }
 
 /* SECTION CONTATOS **********************************************************************************************************************************/
@@ -536,20 +566,3 @@ p {
     font-size: 0.8em;
     padding: 0.5em 0;
 }
-
-/*************************************************************** RESPOSNSIVIDADE *******************************************************************/
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
