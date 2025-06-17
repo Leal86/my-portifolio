@@ -126,10 +126,11 @@ p {
     top: 100%;
     right: 0;
     border: 2px solid var(--branco);
-    width: 38vw;
+    width: 27vw;
 }
 
 .cabecalho_lista-menu_item {
+    text-align: center;
     padding: 0.8em;
     background-color: var(--azul-profundo);
 }
@@ -173,7 +174,8 @@ p {
     border-radius: 50%;
     border: 5px solid var(--azul-vivido);
     box-shadow: 0 4px 8px rgba(2, 230, 142, 0.1);
-    width: 50%;
+    width: 45%;
+    max-width: 50%;
     margin-bottom: 0%;
 }
 

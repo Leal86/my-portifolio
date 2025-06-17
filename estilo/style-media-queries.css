@@ -1,3 +1,7 @@
+@charset "UTF-8";
+@import url(../estilo/reset.css);
+@import url(../estilo/style.css);
+
 /*************************************************************** RESPOSNSIVIDADE *******************************************************************/
 
 /* Extra small devices (phones, 600px and down) */
@@ -18,14 +22,28 @@
         font-size: 1.7rem;
     }
 
+    .cabecalho_container_lista-menu {
+        
+        width: 22vw;
+    }
+
     /* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
     .banner_foto_alex {
-        border-radius: 50%;
-        border: 5px solid var(--azul-vivido);
-        box-shadow: 0 4px 8px rgba(2, 230, 142, 0.1);
-        width: 50%;
-        margin-bottom: 0%;
+        width: 30%;
     }
+
+    .banner_txt {
+        font-family: var(--fonte-padrao);
+        letter-spacing: 0.1em;
+        font-size: 2.4em;
+        font-weight: 500;
+    }
+
+    .banner_txt-nome {
+        font-family: var(--fonte-padrao);
+        font-size: 2.5em;
+    }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
