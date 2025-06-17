@@ -23,27 +23,31 @@
     }
 
     .cabecalho_container_lista-menu {
-        
         width: 22vw;
     }
 
-    /* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
-    .banner_foto_alex {
-        width: 30%;
+    .cabecalho_lista-menu_item {
+        text-align: end;
     }
 
-    .banner_txt {
-        font-family: var(--fonte-padrao);
-        letter-spacing: 0.1em;
-        font-size: 2.4em;
-        font-weight: 500;
+    .cabecalho_lista-menu_link {
+        color: var(--branco);
+        font-size: 1.3rem;
     }
+}
 
-    .banner_txt-nome {
-        font-family: var(--fonte-padrao);
-        font-size: 2.5em;
-    }
+/* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
+.banner_foto_alex {
+    
+}
 
+.banner_txt {
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+.banner_txt-nome {
+    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
