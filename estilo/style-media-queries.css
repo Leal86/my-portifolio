@@ -9,7 +9,7 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-/* HEADER ******************************************************************************************************************************************/
+    /* HEADER ******************************************************************************************************************************************/
     .cabecalho_container_logotipo {
         width: 80px;
     }
@@ -18,12 +18,65 @@
         font-size: 1.7rem;
     }
 
-/* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
-    
+    /* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
+    .banner_foto_alex {
+        border-radius: 50%;
+        border: 5px solid var(--azul-vivido);
+        box-shadow: 0 4px 8px rgba(2, 230, 142, 0.1);
+        width: 50%;
+        margin-bottom: 0%;
+    }
 }
 
-    /* Large devices (laptops/desktops, 992px and up) */
-    @media only screen and (min-width: 992px) {}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {}
+    .tela-construcao {
+        display: flex;
+    }
+
+    .tela-construcao__titulo {
+        color: var(--branco);
+    }
+
+    .tela-construcao__texto {
+        color: var(--branco);
+        text-align: center;
+    }
+
+    body>*:not(.tela-construcao) {
+        display: none;
+    }
+
+    /*.tela-construcao {
+        display: flex;
+    }
+    
+    body > *:not(.tela-construcao) {
+        filter: blur(2px); /* opcional, só para dar um efeito 
+        pointer-events: none;
+        user-select: none;
+    }*/
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .tela-construcao {
+        display: flex;
+    }
+
+    body>*:not(.tela-construcao) {
+        display: none;
+    }
+
+
+    /*.tela-construcao {
+        display: flex;
+    }
+    
+    body > *:not(.tela-construcao) {
+        filter: blur(2px); /* opcional, só para dar um efeito 
+        pointer-events: none;
+        user-select: none;
+    }*/
+}

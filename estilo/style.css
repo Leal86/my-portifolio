@@ -361,13 +361,13 @@ p {
     width: 100%;
 }
 
-.projetos_caixa_link {   
+.projetos_caixa_link {
     text-decoration: none;
     color: var(--cor-de-fundo);
     font-weight: 600;
     font-size: 1em;
     font-family: var(--fonte-helloWorld);
-    transition: color 0.2s ease-in-out; 
+    transition: color 0.2s ease-in-out;
 }
 
 .projetos_caixa_link:hover {
@@ -448,7 +448,7 @@ p {
     background: var(--preto);
     color: var(--branco);
     text-align: center;
-    padding:  0;
+    padding: 0;
     overflow: hidden;
     height: 35vh;
 }
@@ -458,7 +458,8 @@ p {
     position: absolute;
     inset: 0;
     background: url("../img/logos/logo-1.png") no-repeat center center / cover;
-    background-size: 300px auto; /* ajuste o valor conforme desejar */
+    background-size: 300px auto;
+    /* ajuste o valor conforme desejar */
     opacity: 0.3;
     z-index: 0;
     pointer-events: none;
@@ -482,7 +483,7 @@ p {
     width: 50%;
 }
 
-.item-1{
+.item-1 {
     width: 50%;
     align-items: flex-start;
 }
@@ -499,7 +500,7 @@ p {
     align-self: flex-start;
 }
 
-.rodape_container_lista-menu_item{
+.rodape_container_lista-menu_item {
     text-align: start;
     padding: 0 0 0.5em 1.7em;
 }
@@ -566,3 +567,114 @@ p {
     font-size: 0.8em;
     padding: 0.5em 0;
 }
+
+
+/* TELAS DE CONSTRUÇÃO ******************************************************************************************************************************/
+.tela-construcao {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(12, 111, 211, 0.7)),
+        url("../img/fundos/fundo1.jpg") no-repeat center center;
+    background-size: cover;
+    color: var(--branco);
+    text-align: center;
+    flex-direction: column;
+}
+
+.tela-construcao__conteudo {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.tela-construcao h1 {
+    font-size: 4rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5em;
+}
+
+.tela-construcao__subtitulo {
+    font-family: var(--fonte-padrao);
+    font-size: 1.5rem;
+    padding: 0.5em 0;
+    color: var(--branco);
+    margin-bottom: 1em;
+}
+
+.tela-construcao p {
+    font-size: 1.2rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 1.5em;
+}
+
+.tela-construcao__barra {
+    width: 80%;
+    height: 12px;
+    background: var(--cor-de-fundo);
+    border-radius: 6px;
+    margin: 0 auto 0.5em auto;
+    overflow: hidden;
+}
+
+.tela-construcao__progresso {
+    width: 60%;
+    /* ajuste para simular progresso */
+    height: 100%;
+    background: var(--azul-vivido);
+}
+
+.tela-construcao__porcentagem {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto 2em auto;
+    font-size: 1em;
+}
+
+.tela-construcao__icones {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.tela-construcao__icones img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid var(--branco);
+    padding: 8px;
+    background: var(--cor-de-fundo);
+    transition: transform 0.2s;
+}
+
+.tela-construcao__icones img:hover {
+    transform: scale(1.1);
+    background: var(--azul-vivido);
+}
+
+.tela-construcao__footer {
+    font-size: 0.9em;
+    opacity: 0.8;
+    margin-top: 2em;
+}
+
+/*.tela-construcao {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    color: #fff;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.tela-construcao__conteudo {
+    max-width: 90vw;
+}*/
