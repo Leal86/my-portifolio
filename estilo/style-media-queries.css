@@ -34,20 +34,154 @@
         color: var(--branco);
         font-size: 1.3rem;
     }
-}
 
-/* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
-.banner_foto_alex {
-    
-}
 
-.banner_txt {
-    letter-spacing: 0.1em;
-    font-weight: 500;
-}
+    /* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
+    .banner_foto_alex {
+        width: 40%;
+    }
 
-.banner_txt-nome {
-    
+    .banner_txt {
+        letter-spacing: 0.1em;
+        font-weight: 500;
+        font-size: 2.5em;
+    }
+
+    .banner_txt-nome {
+        font-weight: 700;
+        font-size: 3em;
+    }
+
+    /* SECTION SOBRE ************************************************************************************************************************************/
+
+    .sobre_descricao {
+        padding: 2em;
+    }
+
+    .sobre_descricao_titulo {
+        padding: 0.5em;
+        font-size: 2.5em;
+    }
+
+    .sobre_descricao_texto {
+        font-size: 1.3em;
+        line-height: 1.5;
+        padding-bottom: 2%;
+    }
+
+    /* SECTION FORMAÇÃO ********************************************************************************************************************************/
+
+    .formacao {
+        padding: 2em;
+    }
+
+    .formacao_titulo {
+        padding: 0.5em;
+        font-size: 2.5em;
+    }
+
+    .formacao_titulo_graduacao {
+        font-size: 1.5em;
+        padding: 0.5em 0.5em 1em 0.5em;
+    }
+
+    .formacao_texto {
+        font-size: 1.3em;
+        line-height: 1.5;
+        padding-bottom: 2%;
+    }
+
+    /* SECTION CURSOS (Certificados) *******************************************************************************************************************/
+
+    .cursos {
+        padding: 0.5em;
+        font-size: 2em;
+    }
+
+    .cursos_titulo {
+        font-size: 1.2em;
+        padding: .5em 0 0.2em 0;
+    }
+
+    .swipper-pagination {
+        margin: .5em 0 1em 0;
+    }
+
+    /* SECTION PROJETOS ********************************************************************************************************************************/
+
+
+
+    .projetos_titulo {
+        padding: 0.7em 0 0.8em 0;
+        font-size: 2.5em;
+    }
+
+    .projetos_listas {
+        padding: 0 2em;
+    }
+
+    .projetos_lista_item {
+        gap: 1em;
+        width: 200px;
+        height: 270px;
+    }
+
+    .projeto_lista_item_link {
+        font-size: 1em;
+    }
+
+    .projetos_texto {
+        font-size: 0.9em;
+        line-height: 1.5;
+        padding: 0.5em;
+    }
+
+    .projetos_caixa {
+        width: 100%;
+    }
+
+    .projetos_caixa_link {
+        text-decoration: underline;
+        font-weight: 500;
+        font-size: 1.3em;
+    }
+
+    /* SECTION CONTATO *********************************************************************************************************************************/
+    .contatos {
+        padding: 0 2em;
+    }
+
+    .contatos_titulo {
+        font-size: 2.4em;
+        padding: 1em;
+    }
+
+    .contatos_lista_item_link {
+        width: 80px;
+        /* ajuste para o tamanho do seu ícone */
+        height: 80px;
+        /* ajuste para o tamanho do seu ícone */
+    }
+
+    /* SECTION RODAPÉ **********************************************************************************************************************************/
+    .rodape {
+        padding: 0em 2.2em;
+    }
+
+    .rodape::before {
+        background-size: 450px auto;
+        /* ajuste o valor conforme desejar */
+    }
+
+    .rodape_container_item_titulo-paginas {    
+        font-size: 1.4em;
+        
+    }
+
+    .rodape_container_item_lista-menu_link {
+        font-size: 1.2em;
+    }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
