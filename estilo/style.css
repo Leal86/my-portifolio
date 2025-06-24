@@ -243,11 +243,12 @@ p {
 /* SECTION CURSOS (Certificados) *******************************************************************************************************************/
 
 .cursos {
-    background-color: var(--branco);
+    background-color: var(--cor-de-fundo);
 }
 
-.cursos_titulo {}
-
+.cursos_titulo {
+    padding: 1.3em 0 0.3em 0;
+}
 
 .swiper-wrapper {
     width: 100%;
@@ -255,18 +256,22 @@ p {
 
 .swipper-pagination {
     position: initial;
-    margin: .5em 0;
+    margin: 1em 0;
     text-align: center;
 }
 
 .cursos_img-certificado {
-    width: 100%;
+    width: 90%;
+    box-shadow: 0 0 4px 2px rgba(128, 128, 128, 0.486);
+    border-radius: 10px;
+    margin: 0 1.4em 1.5em 1.4em;
 }
 
-.swipper-slide {}
+.swipper-slide {
+}
 
 .swipper-slide img {
-    width: 100%;
+    width: 90%;
 }
 
 .swiper-button-prev,
@@ -405,9 +410,9 @@ p {
     display: inline-block;
     text-decoration: none;
     color: var(--textos-icones);
-    width: 48px;
+    width: 60px;
     /* ajuste para o tamanho do seu ícone */
-    height: 48px;
+    height: 60px;
     /* ajuste para o tamanho do seu ícone */
 }
 
