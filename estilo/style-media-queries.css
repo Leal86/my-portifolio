@@ -15,7 +15,7 @@
 
     /* HEADER ******************************************************************************************************************************************/
     .cabecalho_container_logotipo {
-        width: 80px;
+        width: 70px;
     }
 
     .cabecalho_container_titulo {
@@ -37,6 +37,10 @@
 
 
     /* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
+    .banner {
+        height: 93vh;
+    }
+    
     .banner_foto_alex {
         width: 40%;
     }
@@ -165,7 +169,7 @@
 
     /* SECTION RODAPÉ **********************************************************************************************************************************/
     .rodape {
-        padding: 0em 2.2em;
+        padding: 3em 4.5em 1em 4.5em;
     }
 
     .rodape::before {
@@ -173,13 +177,47 @@
         /* ajuste o valor conforme desejar */
     }
 
-    .rodape_container_item_titulo-paginas {    
-        font-size: 1.4em;
-        
+    .rodape_container_item_titulo-paginas {
+        font-size: 1.5em;
+        margin-left: 1.5em;
+    }
+
+    .rodape_container_lista-menu_item {
+        padding: 0 0 1em 0;
+        margin-left: 2.2em;
     }
 
     .rodape_container_item_lista-menu_link {
-        font-size: 1.2em;
+        font-size: 1.3em;
+    }
+
+    .rodape_container_item_titulo-social-media {
+        font-size: 1.5em;
+        margin-right: 1em;
+        padding-bottom: 1em;
+    }
+
+    .rodape_container_item_lista-social-media_img {
+        width: 45px;
+        margin: 0 2.3em 0.3em 0;
+    }
+
+    .icon-email-rodape {
+        width: 56px;
+        margin: -0.7em 2em 0 0;
+    }
+
+    .rodape_item-3_img_rodape {
+        width: 60px;
+    }
+
+    .rodape_item-3__link {
+        font-size: 1.1em;
+    }
+
+    .rodape_item-3__text {
+        font-family: var(--fonte-helloWorld);
+        font-size: 1em;
     }
 
 }
