@@ -11,7 +11,7 @@
 @media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991.5px) {
 
     /* HEADER ******************************************************************************************************************************************/
     .cabecalho_container_logotipo {
@@ -32,12 +32,12 @@
 
     .cabecalho_lista-menu_link {
         color: var(--branco);
-        
+
     }
 
 
     /* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
-    
+
     .banner_foto_alex {
         width: 40%;
     }
@@ -114,7 +114,7 @@
     /* SECTION PROJETOS ********************************************************************************************************************************/
 
     .projetos {
-        padding-top: 1em;
+        padding-top: 1em 5em 1em 5em;
     }
 
     .projetos_titulo {
@@ -122,11 +122,24 @@
         font-size: 2em;
     }
 
+    .projetos_lista {
+        grid-template-columns: repeat(3, 1fr);
+        /* 2 colunas */
+
+    }
+
     .projetos_lista_item {
         margin: 1em 0;
-        width: 200px;
-        height: 270px;
+        width: 80%;
+        height: 95%;
+        box-sizing: border-box;
+        overflow: hidden;
+        /* Impede que o conteúdo vaze */
+        flex-direction: column;
+        align-items: center;
     }
+
+    
 
     .projeto_lista_item_link {
         font-size: 1em;
@@ -135,7 +148,8 @@
     .projetos_texto {
         font-size: 0.8em;
         line-height: 1.5;
-        padding: 0.5em;
+        margin: 2.5em;
+        padding: 0;
     }
 
     .projetos_caixa {
@@ -225,7 +239,7 @@
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1199.5px) {
 
     .tela-construcao {
         display: flex;
