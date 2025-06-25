@@ -19,7 +19,7 @@
     }
 
     .cabecalho_container_titulo {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 
     .cabecalho_container_lista-menu {
@@ -32,14 +32,11 @@
 
     .cabecalho_lista-menu_link {
         color: var(--branco);
-        font-size: 1.3rem;
+        
     }
 
 
     /* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
-    .banner {
-        height: 93vh;
-    }
     
     .banner_foto_alex {
         width: 40%;
@@ -48,27 +45,30 @@
     .banner_txt {
         letter-spacing: 0.1em;
         font-weight: 500;
-        font-size: 2.5em;
     }
 
     .banner_txt-nome {
+        font-size: 2.2em;
         font-weight: 700;
-        font-size: 3em;
+        color: var(--azul-vivido);
+        text-shadow: 0.01em 0.01em 0.02em;
+        /*-webkit-text-stroke-width: 0.001px;
+        -webkit-text-stroke-color: var(--azul-profundo-escuro);*/
     }
 
     /* SECTION SOBRE ************************************************************************************************************************************/
 
     .sobre_descricao {
-        padding: 2em;
+        padding: 2em 5em;
     }
 
     .sobre_descricao_titulo {
         padding: 0.5em;
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     .sobre_descricao_texto {
-        font-size: 1.3em;
+        font-size: 1em;
         line-height: 1.5;
         padding-bottom: 2%;
     }
@@ -76,30 +76,30 @@
     /* SECTION FORMAÇÃO ********************************************************************************************************************************/
 
     .formacao {
-        padding: 2em;
+        padding: 2em 5em 1em 5em;
     }
 
     .formacao_titulo {
-        padding: 0.5em;
-        font-size: 2.5em;
+        padding: 0;
+        font-size: 2em;
     }
 
     .formacao_titulo_graduacao {
-        font-size: 1.5em;
+        font-size: 1em;
         padding: 0.5em 0.5em 1em 0.5em;
     }
 
     .formacao_texto {
-        font-size: 1.3em;
+        font-size: 1em;
         line-height: 1.5;
-        padding-bottom: 2%;
+        padding-bottom: 5%;
     }
 
     /* SECTION CURSOS (Certificados) *******************************************************************************************************************/
 
     .cursos {
-        padding: 0.5em;
-        font-size: 2em;
+        padding: 1em 4em 1em 4em;
+        font-size: 1.5em;
     }
 
     .cursos_titulo {
@@ -113,19 +113,17 @@
 
     /* SECTION PROJETOS ********************************************************************************************************************************/
 
-
+    .projetos {
+        padding-top: 1em;
+    }
 
     .projetos_titulo {
         padding: 0.7em 0 0.8em 0;
-        font-size: 2.5em;
-    }
-
-    .projetos_listas {
-        padding: 0 2em;
+        font-size: 2em;
     }
 
     .projetos_lista_item {
-        gap: 1em;
+        margin: 1em 0;
         width: 200px;
         height: 270px;
     }
@@ -135,7 +133,7 @@
     }
 
     .projetos_texto {
-        font-size: 0.9em;
+        font-size: 0.8em;
         line-height: 1.5;
         padding: 0.5em;
     }
@@ -152,59 +150,63 @@
 
     /* SECTION CONTATO *********************************************************************************************************************************/
     .contatos {
-        padding: 0 2em;
+        padding: 1em 6em 1em 6em;
     }
 
     .contatos_titulo {
-        font-size: 2.4em;
-        padding: 1em;
+        font-size: 2em;
+        padding: 0.5em;
     }
 
     .contatos_lista_item_link {
-        width: 80px;
+        width: 70px;
         /* ajuste para o tamanho do seu ícone */
-        height: 80px;
+        height: 70px;
         /* ajuste para o tamanho do seu ícone */
     }
 
     /* SECTION RODAPÉ **********************************************************************************************************************************/
     .rodape {
-        padding: 3em 4.5em 1em 4.5em;
+        padding: 3em 4.5em 2em 4.5em;
     }
 
     .rodape::before {
-        background-size: 450px auto;
+        background-size: 430px auto;
         /* ajuste o valor conforme desejar */
     }
 
     .rodape_container_item_titulo-paginas {
-        font-size: 1.5em;
-        margin-left: 1.5em;
+        font-size: 1.2em;
+        margin-left: 2em;
     }
 
     .rodape_container_lista-menu_item {
         padding: 0 0 1em 0;
-        margin-left: 2.2em;
+        margin-left: 2.4em;
     }
 
     .rodape_container_item_lista-menu_link {
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
     .rodape_container_item_titulo-social-media {
-        font-size: 1.5em;
-        margin-right: 1em;
+        font-size: 1.2em;
+        margin-right: 1.5em;
         padding-bottom: 1em;
     }
 
     .rodape_container_item_lista-social-media_img {
-        width: 45px;
-        margin: 0 2.3em 0.3em 0;
+        width: 35px;
+        margin: 0 2.7em 0.3em 0;
     }
 
     .icon-email-rodape {
-        width: 56px;
-        margin: -0.7em 2em 0 0;
+        width: 45px;
+        margin: -0.7em 2.4em 0 0;
+    }
+
+    .rodape_item-3 {
+        top: 1em;
     }
 
     .rodape_item-3_img_rodape {

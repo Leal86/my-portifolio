@@ -366,7 +366,7 @@ p {
 
 .projetos_caixa {
     display: inline-block;
-    background-color: var(--azul-vivido-escuro);
+    background-color: var(--azul-brilhante);
     text-align: center;
     padding: 1.3em 0;
     width: 100%;
@@ -375,15 +375,20 @@ p {
 .projetos_caixa_link {
     text-decoration: none;
     color: var(--cor-de-fundo);
-    font-weight: 600;
+    font-weight: 800;
     font-size: 1em;
-    font-family: var(--fonte-helloWorld);
+    font-family: var(--fonte-padrao);
     transition: color 0.2s ease-in-out;
 }
 
 .projetos_caixa_link:hover {
-    color: var(--azul-profundo-escuro);
+    color: var(--branco);
     text-decoration: underline;
+}
+
+.projetos_caixa:hover {
+    background-color: var(--azul-vivido);
+    transition: background-color 0.3s ease-in-out;
 }
 
 /* SECTION CONTATOS **********************************************************************************************************************************/
@@ -459,9 +464,8 @@ p {
     background: var(--preto);
     color: var(--branco);
     text-align: center;
-    padding: 1.8em 3em 1em 3em;
+    padding: 1.8em 3em 0em 3em;
     overflow: hidden;
-    height: 35vh;
 }
 
 .rodape::before {
