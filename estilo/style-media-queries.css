@@ -4,11 +4,11 @@
 
 /*************************************************************** RESPOSNSIVIDADE *******************************************************************/
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+/* Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {}*/
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+/* Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {}*/
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991.5px) {
@@ -239,7 +239,7 @@
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1199.5px) {
+@media only screen and (min-width: 992px) and (max-width: 1279.5px) {
 
     .tela-construcao {
         display: flex;
@@ -269,24 +269,22 @@
     }*/
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+@media only screen and (min-width: 1280px) {
     .tela-construcao {
         display: flex;
+    }
+
+    .tela-construcao__titulo {
+        color: var(--branco);
+    }
+
+    .tela-construcao__texto {
+        color: var(--branco);
+        text-align: center;
     }
 
     body>*:not(.tela-construcao) {
         display: none;
     }
-
-
-    /*.tela-construcao {
-        display: flex;
-    }
-    
-    body > *:not(.tela-construcao) {
-        filter: blur(2px); /* opcional, só para dar um efeito 
-        pointer-events: none;
-        user-select: none;
-    }*/
 }
