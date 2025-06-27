@@ -10,6 +10,41 @@
 /* Small devices (portrait tablets and large phones, 600px and up) 
 @media only screen and (min-width: 600px) {}*/
 
+@media screen and (min-width: 426px) and (max-width: 991.5px) and (orientation: portrait) {
+    .banner_foto_alex {
+        width: 45%;
+        /* ou o valor que preferir para o modo retrato */
+        margin: 4% 0%;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 991.5px) and (orientation: landscape) {
+
+    /* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
+    .banner {
+        height: auto;
+        padding: 3em;
+    }
+
+    .banner_foto_alex {
+        width: 10%;
+        margin: 2% 0 2% 0;
+    }
+
+    .banner_txt {
+        margin: 2% 0;
+    }
+
+    .banner_txt-nome {
+        font-family: var(--fonte-helloWorld);
+        color: var(--azul-vivido);
+        font-size: 2em;
+    }
+
+}
+
+
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991.5px) {
 
@@ -261,7 +296,8 @@
     .cabecalho_container_menu-hamburguer,
     .cabecalho_container_botao,
     .cabecalho_container_rotulo {
-        display: none !important;/* Esconde o menu hambúrguer e o checkbox */
+        display: none !important;
+        /* Esconde o menu hambúrguer e o checkbox */
     }
 
     .cabecalho_cabecalho_container {
@@ -290,7 +326,8 @@
 
     .cabecalho_lista-menu_link {
         transition: transform 0.2s, color 0.2s;
-        display: inline-block; /* Necessário para o transform funcionar corretamente */
+        display: inline-block;
+        /* Necessário para o transform funcionar corretamente */
     }
 
     .cabecalho_lista-menu_link:hover {
