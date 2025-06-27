@@ -4,12 +4,7 @@
 
 /*************************************************************** RESPOSNSIVIDADE *******************************************************************/
 
-/* Extra small devices (phones, 600px and down) 
-@media only screen and (max-width: 600px) {}*/
-
-/* Small devices (portrait tablets and large phones, 600px and up) 
-@media only screen and (min-width: 600px) {}*/
-
+/* Portrait phones and small tablets, 426px to 991.5px */
 @media screen and (min-width: 426px) and (max-width: 991.5px) and (orientation: portrait) {
     .banner_foto_alex {
         width: 45%;
@@ -18,6 +13,7 @@
     }
 }
 
+/* Landscape tablets and large phones, 426px to 991.5px */
 @media screen and (min-width: 426px) and (max-width: 991.5px) and (orientation: landscape) {
 
     /* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
@@ -42,7 +38,6 @@
     }
 
 }
-
 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -159,8 +154,7 @@
 
     .projetos_lista {
         grid-template-columns: repeat(3, 1fr);
-        /* 2 colunas */
-
+        /* 3 colunas */
     }
 
     .projetos_lista_item {
@@ -173,8 +167,6 @@
         flex-direction: column;
         align-items: center;
     }
-
-
 
     .projeto_lista_item_link {
         font-size: 1em;
@@ -289,8 +281,9 @@
     }
 
     .cabecalho_container_titulo {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin: 0;
+        padding-right: 2.1em;
     }
 
     .cabecalho_container_menu-hamburguer,
@@ -313,7 +306,6 @@
     }
 
     .cabecalho_container_lista-menu:hover {
-
         transition: ease-in-out 0.8s;
     }
 
@@ -325,6 +317,7 @@
     }
 
     .cabecalho_lista-menu_link {
+        font-size: 0.9em;
         transition: transform 0.2s, color 0.2s;
         display: inline-block;
         /* Necessário para o transform funcionar corretamente */
@@ -336,27 +329,164 @@
     }
 
     /* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
+    .banner_foto_alex {
+        width: 25%;
+    }
 
+    .banner_txt {
+        letter-spacing: 0.1em;
+    }
+
+    .banner_txt-nome {
+        font-size: 2.2em;
+        font-weight: 700;
+        color: var(--azul-vivido);
+        text-shadow: 0.01em 0.01em 0.02em;
+        /*-webkit-text-stroke-width: 0.001px;
+        -webkit-text-stroke-color: var(--azul-profundo-escuro);*/
+    }
 
 
     /* SECTION SOBRE ************************************************************************************************************************************/
+    .sobre_descricao {
+        padding: 2em 15%;
+    }
 
+    .sobre_descricao_titulo {
+        padding: 0.5em;
+        font-size: 2em;
+    }
+
+    .sobre_descricao_texto {
+        padding-bottom: 2%;
+    }
 
 
     /* SECTION FORMAÇÃO ********************************************************************************************************************************/
+    .formacao {
+        padding: 2em 15%;
+    }
 
+    .formacao_titulo {
+        padding: 0;
+        font-size: 2em;
+    }
+
+    .formacao_titulo_graduacao {
+        font-size: 1em;
+        padding: 0.5em 0.5em 1em 0.5em;
+    }
+
+    .formacao_texto {
+        font-size: 1em;
+        line-height: 1.5;
+        padding-bottom: 5%;
+    }
 
 
     /* SECTION CURSOS (Certificados) *******************************************************************************************************************/
 
+    .cursos {
+        padding: 1% 5%;
+        font-size: 1.5em;
+    }
 
     /* SECTION PROJETOS ********************************************************************************************************************************/
 
+    .projetos {
+        padding-top: 1%;
+    }
+
+    .projetos_titulo {
+        padding: 0.7em 0 0.8em 0;
+        font-size: 2em;
+    }
+
+    .projetos_lista {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 colunas */
+    }
+
+    .projetos_lista_item {
+        margin: 1em 0;
+        width: 70%;
+        height: 95%;
+        box-sizing: border-box;
+        overflow: hidden;
+        /* Impede que o conteúdo vaze */
+        flex-direction: column;
+        align-items: center;
+    }
 
     /* SECTION CONTATO *********************************************************************************************************************************/
+    .contatos {
+        padding: 1% 15%;
+    }
 
+    .contatos_titulo {
+        font-size: 2em;
+        padding: 1em 0;
+    }
+
+    .contatos_lista_item_link {
+        width: 60px;
+        /* ajuste para o tamanho do seu ícone */
+        height: 60px;
+        /* ajuste para o tamanho do seu ícone */
+    }
 
     /* SECTION RODAPÉ **********************************************************************************************************************************/
+    .rodape {
+        padding: 5% 15%;
+    }
+
+    .rodape::before {
+        background-size: 430px auto;
+        /* ajuste o valor conforme desejar */
+    }
+
+    .rodape_container_lista-menu_item {
+        padding: 0 0 1.2em 0;
+    }
+
+    .rodape_container_item_titulo-social-media {
+        font-size: 1.2em;
+        margin-right: 1.5em;
+        padding-bottom: 1em;
+    }
+
+    .rodape_container_item_lista-social-media_img {
+        width: 38px;
+        margin-right: 2.5em;
+        margin-bottom: 0.3em ;
+    }
+
+    .icon-email-rodape {
+        width: 50px;
+        margin: -0.7em 2.1em 0 0;
+    }
+
+    .rodape_item-3 {
+        top: 1em;
+    }
+
+    .rodape_item-3_img_rodape {
+        width: 60px;
+    }
+
+    .rodape_item-3__link {
+        font-size: 1.1em;
+    }
+
+    .rodape_item-3__link:hover {
+        text-decoration: underline;
+    }
+
+    .rodape_item-3__text {
+        font-size: 1em;
+    }
+
+
 
 
     /* BOTÃO VOLTAR AO TOPO **********************************************************************************************************************/
