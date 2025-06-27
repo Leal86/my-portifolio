@@ -132,6 +132,7 @@ p {
 .cabecalho_lista-menu_item {
     text-align: center;
     padding: 0.8em;
+    text-transform: uppercase;
     background-color: var(--azul-profundo);
 }
 
@@ -140,19 +141,17 @@ p {
     color: var(--azul-vivido);
     background: var(--azul-profundo-escuro);
     background-clip: text;
-    text-transform: uppercase;
     transition: ease-in-out 0.5s;
 }
 
 .cabecalho_lista-menu_link {
     color: var(--branco);
     text-decoration: none;
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-helloWorld);
 }
 
 .cabecalho_lista-menu_link:hover {
     color: var(--azul-vivido);
-    padding-left: 1em;
     transition: 0.3s ease-in-out;
 }
 
@@ -296,7 +295,8 @@ p {
 
 .projetos_lista {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 colunas */
     gap: 1.7em;
     padding: 0;
     width: 100%;
@@ -551,9 +551,11 @@ p {
 
 .rodape_container_item_lista-social-media {
     display: flex;
-    flex-direction: column; /* Agora fica em coluna */
-    align-items: flex-end; 
-    flex-wrap: nowrap;      /* Não deixa quebrar linha */
+    flex-direction: column;
+    /* Agora fica em coluna */
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    /* Não deixa quebrar linha */
     margin: 0;
 }
 
@@ -598,6 +600,35 @@ p {
     font-weight: 400;
     font-size: 0.8em;
     padding: 0.5em 0;
+}
+
+/* BOTÃO VOLTAR AO TOPO **********************************************************************************************************************/
+#btn-topo {
+    position: fixed;
+    bottom: 0.5em;
+    right: 0.5em;
+    z-index: 1000;
+    background: var(--azul-vivido);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0.5;
+    cursor: pointer;
+    display: none;
+    /* Escondido por padrão */
+    transition: opacity 0.3s, background 0.3s, transform 0.2s;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-topo:hover {
+    opacity: 1;
+    background: var(--azul-vivido-escuro, --azul-vivido-escuro);
+    transform: scale(1.1);
 }
 
 

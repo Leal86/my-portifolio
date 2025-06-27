@@ -139,7 +139,7 @@
         align-items: center;
     }
 
-    
+
 
     .projeto_lista_item_link {
         font-size: 1em;
@@ -236,12 +236,101 @@
         font-size: 1em;
     }
 
+    /* BOTÃO VOLTAR AO TOPO **********************************************************************************************************************/
+    #btn-topo {
+        width: 45px;
+        height: 45px;
+    }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1279.5px) {
 
-    .tela-construcao {
+    /* HEADER ******************************************************************************************************************************************/
+    .cabecalho_container_logotipo {
+        width: 80px;
+        margin: 1em 0;
+    }
+
+    .cabecalho_container_titulo {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .cabecalho_container_menu-hamburguer,
+    .cabecalho_container_botao,
+    .cabecalho_container_rotulo {
+        display: none !important;/* Esconde o menu hambúrguer e o checkbox */
+    }
+
+    .cabecalho_cabecalho_container {
+        margin: 0 0 0 4em;
+    }
+
+    .cabecalho_container_lista-menu {
+        display: flex !important;
+        position: static;
+        width: auto;
+        gap: 0.1em;
+        border: none;
+    }
+
+    .cabecalho_container_lista-menu:hover {
+
+        transition: ease-in-out 0.8s;
+    }
+
+    .cabecalho_lista-menu_item {
+        background: none;
+        margin: 0;
+        padding: 0.5em;
+        font-size: large;
+    }
+
+    .cabecalho_lista-menu_link {
+        transition: transform 0.2s, color 0.2s;
+        display: inline-block; /* Necessário para o transform funcionar corretamente */
+    }
+
+    .cabecalho_lista-menu_link:hover {
+        transform: scale(1.15);
+        text-decoration: underline;
+    }
+
+    /* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
+
+
+
+    /* SECTION SOBRE ************************************************************************************************************************************/
+
+
+
+    /* SECTION FORMAÇÃO ********************************************************************************************************************************/
+
+
+
+    /* SECTION CURSOS (Certificados) *******************************************************************************************************************/
+
+
+    /* SECTION PROJETOS ********************************************************************************************************************************/
+
+
+    /* SECTION CONTATO *********************************************************************************************************************************/
+
+
+    /* SECTION RODAPÉ **********************************************************************************************************************************/
+
+
+    /* BOTÃO VOLTAR AO TOPO **********************************************************************************************************************/
+    #btn-topo {
+        width: 45px;
+        height: 45px;
+    }
+
+    /* TELA DE CONSTRUÇÃO *******************************************************************************************************************************/
+
+    /*.tela-construcao {
         display: flex;
     }
 
@@ -258,7 +347,7 @@
         display: none;
     }
 
-    /*.tela-construcao {
+    .tela-construcao {
         display: flex;
     }
     

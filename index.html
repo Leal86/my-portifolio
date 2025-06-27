@@ -763,8 +763,8 @@
                     </li>
 
                     <li class="rodape_container_item_lista-social-media_item">
-                        <a class="rodape_container_item_lista-social-media_link" href="mailto:alexsander.leal86@gmail.com"
-                            target="_blank">
+                        <a class="rodape_container_item_lista-social-media_link"
+                            href="mailto:alexsander.leal86@gmail.com" target="_blank">
                             <img class="rodape_container_item_lista-social-media_img icon-email-rodape"
                                 src="img/redes/logo-email-cor-2.png" alt="Logo do E-mail">
                         </a>
@@ -784,6 +784,33 @@
 
     </footer>
 
+    <button id="btn-topo" title="Voltar ao topo">
+        <span class="material-icons">arrow_upward</span>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+     <script src="js/main.js"></script>
+
+<!--  
+    <script>
+    // Mostra o botão a partir da section "banner"
+    window.addEventListener('scroll', function () {
+        const sobre = document.querySelector('.banner');
+        const btn = document.getElementById('btn-topo');
+        if (!sobre || !btn) return;
+        const sobreTop = sobre.getBoundingClientRect().top + window.scrollY;
+        if (window.scrollY > sobreTop - 100) {
+            btn.style.display = 'flex';
+        } else {
+            btn.style.display = 'none';
+        }
+    });
+
+    // Scroll suave ao topo
+    document.getElementById('btn-topo').addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
@@ -803,31 +830,33 @@
 
         });
     </script>
+    -->
+   
 </body>
 
 <div class="tela-construcao">
-  <div class="tela-construcao__conteudo">
-    <h1 class="tela-construcao__titulo">PORTIFÓLIO</h1>
-     <h2 class="tela-construcao__subtitulo">EM CONSTRUÇÃO</h2>
-    <p class="tela-construcao__texto">O site está quase pronto</p>
-    <div class="tela-construcao__barra">
-      <div class="tela-construcao__progresso"></div>
+    <div class="tela-construcao__conteudo">
+        <h1 class="tela-construcao__titulo">PORTIFÓLIO</h1>
+        <h2 class="tela-construcao__subtitulo">EM CONSTRUÇÃO</h2>
+        <p class="tela-construcao__texto">O site está quase pronto</p>
+        <div class="tela-construcao__barra">
+            <div class="tela-construcao__progresso"></div>
+        </div>
+        <div class="tela-construcao__porcentagem">
+            <span>0%</span>
+            <span>100%</span>
+        </div>
+        <!--<button class="tela-construcao__botao">Assine!</button>-->
+        <div class="tela-construcao__icones">
+            <a href="https://github.com/leal86"><img src="img/redes/logo-github-d.jpg" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/leal86/"><img src="img/redes/logo-linkedin-d.jpg" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/leal86/"><img src="img/redes/logo-instagram-d.jpg" alt="Instagram"></a>
+            <a href="mailto:alexsander.leal86@gmail.com"><img src="img/redes/logo-email-cor-2.png" alt="E-mail"></a>
+        </div>
+        <footer class="tela-construcao__footer">
+            © 2025 Alexsander Leal.
+        </footer>
     </div>
-    <div class="tela-construcao__porcentagem">
-      <span>0%</span>
-      <span>100%</span>
-    </div>
-    <!--<button class="tela-construcao__botao">Assine!</button>-->
-    <div class="tela-construcao__icones">
-      <a href="https://github.com/leal86"><img src="img/redes/logo-github-d.jpg" alt="GitHub"></a>
-      <a href="https://www.linkedin.com/in/leal86/"><img src="img/redes/logo-linkedin-d.jpg" alt="LinkedIn"></a>
-      <a href="https://www.instagram.com/leal86/"><img src="img/redes/logo-instagram-d.jpg" alt="Instagram"></a>
-      <a href="mailto:alexsander.leal86@gmail.com"><img src="img/redes/logo-email-cor-2.png" alt="E-mail"></a>
-    </div>
-    <footer class="tela-construcao__footer">
-      © 2025 Alexsander Leal.
-    </footer>
-  </div>
 </div>
 
 </html>
