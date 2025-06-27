@@ -623,6 +623,10 @@ p {
     font-size: 2em;
     align-items: center;
     justify-content: center;
+    /* Safari fix */
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    -webkit-transform: translateZ(0);
 }
 
 #btn-topo:hover {
