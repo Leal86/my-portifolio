@@ -49,8 +49,8 @@
 }
 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991.5px) {
+/* Medium devices (medium phones and tablets, 426px and up) */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
 
     /* HEADER ******************************************************************************************************************************************/
     .cabecalho_container_logotipo {
@@ -195,7 +195,6 @@
     }
 
     .projetos_caixa_link {
-        text-decoration: underline;
         font-weight: 500;
         font-size: 1.3em;
     }
@@ -282,8 +281,8 @@
 
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1279.5px) {
+/* Large devices (laptops/desktops, 768.5px and up) */
+@media only screen and (min-width: 768.5px) and (max-width: 1024px) {
 
     /* HEADER ******************************************************************************************************************************************/
     .cabecalho_container_logotipo {
@@ -551,8 +550,8 @@
     }*/
 }
 
-/* Extra large devices (large laptops and desktops, 1280px and up) */
-@media only screen and (min-width: 1280px) {
+/* Extra large devices (large laptops and desktops, 1024.5px and up) */
+@media only screen and (min-width: 1024.5px) and (max-width: 1440px)  {
 
     /* HEADER ******************************************************************************************************************************************/
     .cabecalho_container_logotipo {
@@ -710,4 +709,27 @@
     body>*:not(.tela-construcao) {
         display: none;
     } */
+}
+
+/* extra large devices (large laptops and TVs 4K, 1440px and up) */
+@media only screen and (min-width: 1440.5px) {
+
+     /* TELA DE CONSTRUÇÃO *******************************************************************************************************************************/
+    .tela-construcao {
+        display: flex;
+    }
+
+    .tela-construcao__titulo {
+        color: var(--branco);
+    }
+
+    .tela-construcao__texto {
+        color: var(--branco);
+        text-align: center;
+    }
+
+    body>*:not(.tela-construcao) {
+        display: none;
+    } 
+
 }
