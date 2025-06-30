@@ -294,9 +294,8 @@ p {
 
 .projetos_lista {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 colunas */
-    gap: 1.7em;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 1.7em 0em; /* espaçamento entre os itens */
     padding: 0;
     width: 100%;
     justify-items: center;
@@ -320,10 +319,10 @@ p {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    gap: 0.8em;
-    width: 150px;
-    height: 220px;
-    padding-top: 0.5em;
+    gap: 1em;
+    padding: 0.7em 0;
+    width: 85%;
+    max-width: 180px;
     background-color: var(--cor-de-fundo);
     border-radius: 10px;
     box-shadow: 0 0 8px 4px var(--azul-vivido-escuro);
