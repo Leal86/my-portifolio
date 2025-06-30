@@ -37,6 +37,15 @@
         font-size: 2em;
     }
 
+    /* CONTATOS SECTION ********************************************************************************************************************************/
+    .contatos {
+        height: 25vw;
+    }
+
+    .contatos_lista {
+        padding: 3em;
+    }
+
 }
 
 
@@ -144,7 +153,7 @@
     /* SECTION PROJETOS ********************************************************************************************************************************/
 
     .projetos {
-        padding-top: 1em 5em 1em 5em;
+        padding-top: 1em;
     }
 
     .projetos_titulo {
@@ -153,19 +162,21 @@
     }
 
     .projetos_lista {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         /* 3 colunas */
+        gap: 1.5em 0;
+        /* diminua este valor para reduzir o espaço entre os projetos */
+        margin: auto;
     }
 
     .projetos_lista_item {
-        margin: 1em 0;
-        width: 80%;
-        height: 95%;
+        width: 75%;
+        max-width: 300px;
         box-sizing: border-box;
         overflow: hidden;
         /* Impede que o conteúdo vaze */
         flex-direction: column;
-        align-items: center;
     }
 
     .projeto_lista_item_link {
@@ -409,13 +420,19 @@
 
     .projetos_lista_item {
         margin: 1em 0;
-        width: 70%;
-        height: 95%;
+        padding: 1.5em 0;
+        width: 80%;
+        max-width: 350px;
         box-sizing: border-box;
         overflow: hidden;
         /* Impede que o conteúdo vaze */
         flex-direction: column;
         align-items: center;
+    }
+
+    .projeto_lista_item_link {
+        font-size: 1.2em;
+        letter-spacing: 0.01em;
     }
 
     /* SECTION CONTATO *********************************************************************************************************************************/
@@ -429,15 +446,15 @@
     }
 
     .contatos_lista_item_link {
-        width: 60px;
+        width: 70px;
         /* ajuste para o tamanho do seu ícone */
-        height: 60px;
+        height: 70px;
         /* ajuste para o tamanho do seu ícone */
     }
 
     /* SECTION RODAPÉ **********************************************************************************************************************************/
     .rodape {
-        padding: 5% 15%;
+        padding: 5% 18.5%;
     }
 
     .rodape::before {
@@ -449,6 +466,10 @@
         padding: 0 0 1.2em 0;
     }
 
+    .rodape_container_item_lista-menu_link:hover {
+        text-decoration: underline;
+    }
+
     .rodape_container_item_titulo-social-media {
         font-size: 1.2em;
         margin-right: 1.5em;
@@ -458,7 +479,12 @@
     .rodape_container_item_lista-social-media_img {
         width: 38px;
         margin-right: 2.5em;
-        margin-bottom: 0.3em ;
+        margin-bottom: 0.3em;
+    }
+
+    .rodape_container_item_lista-social-media_img:hover {
+        transform: scale(1.3);
+        transition: transform 0.3s;
     }
 
     .icon-email-rodape {
@@ -527,7 +553,148 @@
 
 /* Extra large devices (large laptops and desktops, 1280px and up) */
 @media only screen and (min-width: 1280px) {
-    .tela-construcao {
+
+    /* HEADER ******************************************************************************************************************************************/
+    .cabecalho_container_logotipo {
+        width: 85px;
+        margin: 1em 2em;
+    }
+
+    .cabecalho_container_titulo {
+        font-size: 150%;
+        margin: 0;
+        padding: 0 3em 0 0;
+    }
+
+    .cabecalho_container_menu-hamburguer,
+    .cabecalho_container_botao,
+    .cabecalho_container_rotulo {
+        display: none !important;
+        /* Esconde o menu hambúrguer e o checkbox */
+    }
+
+    .cabecalho_cabecalho_container {
+        margin: 0 1em 0 5em;
+    }
+
+    .cabecalho_container_lista-menu {
+        display: flex !important;
+        position: static;
+        width: auto;
+        gap: 0.1em;
+        border: none;
+    }
+
+    .cabecalho_container_lista-menu:hover {
+        transition: ease-in-out 0.8s;
+    }
+
+    .cabecalho_lista-menu_item {
+        background: none;
+        margin: 0;
+        padding: 0.5em;
+        font-size: large;
+    }
+
+    .cabecalho_lista-menu_link {
+        font-size: 1em;
+        transition: transform 0.2s, color 0.2s;
+        display: inline-block;
+        /* Necessário para o transform funcionar corretamente */
+    }
+
+    .cabecalho_lista-menu_link:hover {
+        transform: scale(1.15);
+        text-decoration: underline;
+    }
+
+    /* SECTION BANNER APRESENTAÇÃO ****************************************************************************************************************************/
+    .banner {
+        height: calc(100vh - 128px);
+    }
+
+    .banner_foto_alex {
+        width: 20%;
+    }
+
+    .banner_txt {
+        letter-spacing: 0.1em;
+    }
+
+    .banner_txt-nome {
+        font-size: 2.5em;
+        font-weight: 700;
+        color: var(--azul-vivido);
+        text-shadow: 0.009em 0.009em 0.015em;
+    }
+
+    /* SECTION SOBRE ************************************************************************************************************************************/
+    .sobre_descricao {
+        padding: 1em 20%;
+    }
+
+    .sobre_descricao_titulo {
+        padding: 0.5em;
+        font-size: 1.8em;
+    }
+
+    .sobre_descricao_texto {
+        padding-bottom: 2%;
+    }
+
+    /* SECTION FORMAÇÃO ********************************************************************************************************************************/
+    .formacao {
+        padding: 2em 20%;
+    }
+
+    .formacao_titulo {
+        padding: 0;
+        font-size: 1.8em;
+    }
+
+    .formacao_titulo_graduacao {
+        font-size: 1em;
+        padding: 1em 0.5em;
+    }
+
+    .formacao_texto {
+        font-size: 1em;
+        line-height: 1.5;
+        padding-bottom: 2%;
+    }
+
+    /* SECTION CURSOS (Certificados) *******************************************************************************************************************/
+    .cursos {
+        padding: 2% 20%;
+        font-size: 1.5em;
+    }
+
+    .cursos_titulo {
+        padding: .5em 0 0.3em 0;
+    }
+
+    .swiper {
+        max-width: 1440px;
+    }
+
+    /* SECTION PROJETOS ********************************************************************************************************************************/
+    .projetos {
+        padding-top: 2%;
+    }
+
+    .projetos_titulo {
+        padding: 1em 0 1em 0;
+        font-size: 2.5em;
+    }
+
+    .projetos_lista {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 colunas */
+        padding: auto;
+    }
+
+    /* TELA DE CONSTRUÇÃO *******************************************************************************************************************************/
+    /* .tela-construcao {
         display: flex;
     }
 
@@ -542,5 +709,5 @@
 
     body>*:not(.tela-construcao) {
         display: none;
-    }
+    } */
 }
