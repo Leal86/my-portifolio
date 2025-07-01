@@ -718,6 +718,89 @@
         font-size: 1.4em;
     }
 
+    /* SECTION CONTATO *********************************************************************************************************************************/
+    .contatos {
+        padding: 1% 15%;
+    }
+
+    .contatos_titulo {
+        font-size: 2em;
+        padding: 1em 0;
+    }
+
+    .contatos_lista_item_link {
+        width: 80px;
+        /* ajuste para o tamanho do seu ícone */
+        height: 80px;
+        /* ajuste para o tamanho do seu ícone */
+    }
+
+    /* SECTION RODAPÉ **********************************************************************************************************************************/
+    .rodape {
+        padding: 5% 21%;
+    }
+
+    .rodape::before {
+        background-size: 550px auto;
+        /* ajuste o valor conforme desejar */
+    }
+
+    .rodape_container_item_titulo-paginas {
+        font-size: 1.2em;
+        margin-left: 1em;
+    }
+
+    .rodape_container_lista-menu_item {
+        padding: 0 0 1em 1.2em;
+        font-size: 1.1em;
+    }
+
+    .rodape_container_item_lista-menu_link:hover {
+        text-decoration: underline;
+    }
+
+    .rodape_container_item_titulo-social-media {
+        font-size: 1.2em;
+        margin-right: 0;
+        padding-bottom: 1em;
+    }
+
+    .rodape_container_item_lista-social-media_img {
+        width: 48px;
+        margin-right: 0.4em;
+        margin-bottom: 0.3em;
+    }
+
+    .rodape_container_item_lista-social-media_img:hover {
+        transform: scale(1.3);
+        transition: transform 0.3s;
+    }
+
+    .icon-email-rodape {
+        width: 64px;
+        margin: -0.9em -.05em 0 0;
+    }
+
+    .rodape_item-3 {
+        top: 1em;
+    }
+
+    .rodape_item-3_img_rodape {
+        width: 60px;
+    }
+
+    .rodape_item-3__link {
+        font-size: 1em;
+    }
+
+    .rodape_item-3__link:hover {
+        text-decoration: underline;
+    }
+
+    .rodape_item-3__text {
+        font-size: 1em;
+    }
+
     /* TELA DE CONSTRUÇÃO *******************************************************************************************************************************/
     /* .tela-construcao {
         display: flex;
