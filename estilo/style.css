@@ -294,16 +294,11 @@ p {
 
 .projetos_lista {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    grid-template-columns: repeat(2, 1fr);   /* 2 colunas */
     gap: 1.7em 0em; /* espaçamento entre os itens */
     padding: 0;
     width: 100%;
     justify-items: center;
-    /*display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;*/
 }
 
 .projetos_lista_nome-projeto {
@@ -331,7 +326,7 @@ p {
     box-sizing: border-box;
 }
 
-.projetos_lista_item_esconder {
+.projetos_lista_item_hide, .projetos_lista_item_show {
     display: none;
 }
 
