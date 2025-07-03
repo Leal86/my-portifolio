@@ -682,7 +682,7 @@ p {
 }
 
 .tela-construcao__progresso {
-    width: 60%;
+    width: 75%;
     /* ajuste para simular progresso */
     height: 100%;
     background: var(--azul-vivido);
