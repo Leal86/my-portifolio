@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="estilo/reset.css">
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/style-media-queries.css">
+    <link rel="stylesheet" href="estilo/style-pagina-em-contrucao.css">
     <title>Portifólio | Alexsander Leal</title>
 </head>
 
 <body>
-    <header class="cabecalho">
+    <!-- <header class="cabecalho">
 
         <div class="cabecalho_container cabecalho_logo-cabecalho">
             <img src="img/logos/logo-cabecalho.svg" class="cabecalho_container_logotipo cabecalho_container_imagens"
@@ -182,7 +183,7 @@
 
             </div> -->
 
-        </section>
+    <!-- </section>
     </main>
 
     <footer class="rodape">
@@ -264,26 +265,34 @@
 
         </div>
 
-    </footer>
-
-
-    <script>
-        function clickMenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none';
-            } else {
-                itens.style.display = 'block'
-            }
-        }
-
-        function mudouTamanho() {
-            if (window.innerWidth >= 768) {
-                itens.style.display = 'block'
-            } else {
-                itens.style.display = 'none'
-            }
-        }
-    </script>
+    </footer>-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
+<div class="tela-construcao">
+    <div class="tela-construcao__conteudo">
+        <h1 class="tela-construcao__titulo">PORTIFÓLIO</h1>
+        <h2 class="tela-construcao__subtitulo">EM CONSTRUÇÃO</h2>
+        <p class="tela-construcao__texto">O site está quase pronto</p>
+        <div class="tela-construcao__barra">
+            <div class="tela-construcao__progresso"></div>
+        </div>
+        <div class="tela-construcao__porcentagem">
+            <span>0%</span>
+            <span>100%</span>
+        </div>
+
+        <div class="tela-construcao__icones">
+            <a href="https://github.com/leal86"><img src="img/redes/logo-github-d.jpg" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/leal86/"><img src="img/redes/logo-linkedin-d.jpg" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/leal86/"><img src="img/redes/logo-instagram-d.jpg" alt="Instagram"></a>
+            <a href="mailto:alexsander.leal86@gmail.com"><img src="img/redes/logo-email-cor-2.png" alt="E-mail"></a>
+        </div>
+        <footer class="tela-construcao__footer">
+            © 2025 Alexsander Leal.
+        </footer>
+    </div>
+</div>
 
 </html>
