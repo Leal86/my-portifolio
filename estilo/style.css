@@ -360,8 +360,7 @@ p {
 
 .projetos_texto {
     color: var(--branco);
-    margin: 1em;
-    padding: 0.8em 1em;
+    padding: 2em 1em;
     text-align: center;
     font-size: 0.7em;
 }

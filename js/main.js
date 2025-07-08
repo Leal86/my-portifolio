@@ -1,21 +1,37 @@
 
 /* Mostra o botão a partir da section "banner"*/
 window.addEventListener('scroll', function () {
-    const banner = document.querySelector('.banner');
     const btn = document.getElementById('btn-topo');
-    if (!banner || !btn) return;
-    const bannerTop = banner.getBoundingClientRect().top + window.scrollY;
-    if (window.scrollY > bannerTop - 100) {
+    if (!btn) return;
+
+    // Verifica se está na página principal ou na de projetos
+    const banner = document.querySelector('.banner');
+    const pag_projetos = document.querySelector('.pagina-projetos');
+
+    let triggerTop = 0;
+    if (pag_projetos) {
+        triggerTop = pag_projetos.getBoundingClientRect().top + window.scrollY;
+    } else if (banner) {
+        triggerTop = banner.getBoundingClientRect().top + window.scrollY;
+    } else {
+        btn.style.display = 'none';
+        return;
+    }
+
+    if (window.scrollY > triggerTop - 100) {
         btn.style.display = 'flex';
     } else {
         btn.style.display = 'none';
     }
 });
 
-// Scroll suave ao topo
-document.getElementById('btn-topo').addEventListener('click', function () {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+// Scroll suave ao topo (apenas uma vez)
+const btnTopo = document.getElementById('btn-topo');
+if (btnTopo) {
+    btnTopo.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
 
 
 // Inicializa o Swiper quando o DOM estiver pronto

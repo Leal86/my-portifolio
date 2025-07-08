@@ -1,12 +1,25 @@
-https://leal86.github.io/cordel-moderno-paralax/
+https://viacaoalvorada.pt/
 
-https://leal86.github.io/experiencias-paralax-landingPage/
+https://leal86.github.io/cordel-moderno-paralax/
 
 https://leal86.github.io/android-tech-insights/
 
 https://leal86.github.io/tecblog-praticando/
 
+https://leal86.github.io/cultura-eventos/
+
 https://leal86.github.io/finans-app/
+
+https://leal86.github.io/clone-spotify-site/
+
+https://leal86.github.io/secret-number-game/
+
+
+
+
+
+
+https://leal86.github.io/experiencias-paralax-landingPage/
 
 https://leal86.github.io/unes-site-exemplo/index.html
 

@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="logos/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="img/logos/favicon.ico" type="image/x-icon">
+    <!-- Site de ícones do google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="estilo/reset.css">
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/style-media-queries.css">
@@ -64,7 +66,7 @@
     </header>
 
     <main>
-        <section class="projetos">
+        <section class="projetos pagina-projetos">
             <h2 class="projetos_titulo">Projetos</h2>
 
             <ul class="projetos_lista">
@@ -82,23 +84,24 @@
 
                 <li class="projetos_lista_item">
                     <h3 class="projetos_lista_nome-projeto">
-                        <abbr title="Clone do site oficial do Spotify">
-                            <a class="projeto_lista_item_link" href="https://leal86.github.io/clone-spotify-site/"
-                                target="_blank">Spotify (clone)</a>
+                        <abbr title="Site ficticio de uma Financeira">
+                            <a class="projeto_lista_item_link" href="https://leal86.github.io/finans-app/"
+                                target="_blank">Finans</a>
                         </abbr>
                     </h3>
-                    <img src="img/projetos/projeto-spotifyClone.png" alt="Imagem do projeto"
+                    <img src="img/projetos/projeto-finans.png" alt="Imagem do projeto"
                         class="projetos_lista_img-projeto">
                 </li>
 
+
                 <li class="projetos_lista_item">
                     <h3 class="projetos_lista_nome-projeto">
-                        <abbr title="Jogo do número secreto">
-                            <a class="projeto_lista_item_link" href="https://leal86.github.io/secret-number-game/"
-                                target="_blank">Número Secreto</a>
+                        <abbr title="Site ficticio de poesia de Cordel Nordestino">
+                            <a class="projeto_lista_item_link" href="https://leal86.github.io/cordel-moderno-paralax/"
+                                target="_blank">Cordel Moderno</a>
                         </abbr>
                     </h3>
-                    <img src="img/projetos/projeto-jogoNumeroSecreto.png" alt="Imagem do projeto"
+                    <img src="img/projetos/projeto-cordelModerno-site.png" alt="Imagem do projeto"
                         class="projetos_lista_img-projeto">
                 </li>
 
@@ -115,17 +118,6 @@
 
                 <li class="projetos_lista_item">
                     <h3 class="projetos_lista_nome-projeto">
-                        <abbr title="Site ficticio de poesia de Cordel Nordestino">
-                            <a class="projeto_lista_item_link" href="https://leal86.github.io/cordel-moderno-paralax/"
-                                target="_blank">Cordel Moderno</a>
-                        </abbr>
-                    </h3>
-                    <img src="img/projetos/projeto-cordelModerno-site.png" alt="Imagem do projeto"
-                        class="projetos_lista_img-projeto">
-                </li>
-
-                <li class="projetos_lista_item">
-                    <h3 class="projetos_lista_nome-projeto">
                         <abbr title="Site ficticio sobre a história do Android">
                             <a class="projeto_lista_item_link" href="https://leal86.github.io/android-tech-insights/"
                                 target="_blank">História
@@ -136,28 +128,44 @@
                         class="projetos_lista_img-projeto">
                 </li>
 
-                <li class="projetos_lista_item projetos_lista_item_show">
+                <li class="projetos_lista_item">
+                    <h3 class="projetos_lista_nome-projeto">
+                        <abbr title="Clone do site oficial do Spotify">
+                            <a class="projeto_lista_item_link" href="https://leal86.github.io/clone-spotify-site/"
+                                target="_blank">Spotify (clone)</a>
+                        </abbr>
+                    </h3>
+                    <img src="img/projetos/projeto-spotifyClone.png" alt="Imagem do projeto"
+                        class="projetos_lista_img-projeto">
+                </li>
+
+                <li class="projetos_lista_item">
                     <h3 class="projetos_lista_nome-projeto">
                         <abbr title="Site ficticio de blog de tecnologia">
                             <a class="projeto_lista_item_link" href="https://leal86.github.io/tecblog-praticando/"
                                 target="_blank">TecBlog</a>
                         </abbr>
                     </h3>
-                    <img src="img/projetos/projeto-tecBlog.png" alt="Imagem do projeto" class="projetos_lista_img-projeto">
+                    <img src="img/projetos/projeto-tecBlog.png" alt="Imagem do projeto"
+                        class="projetos_lista_img-projeto">
                 </li>
 
-                <li class="projetos_lista_item projetos_lista_item_show">
+                <li class="projetos_lista_item">
                     <h3 class="projetos_lista_nome-projeto">
-                        <abbr title="Site ficticio de uma Financeira">
-                            <a class="projeto_lista_item_link" href="https://leal86.github.io/finans-app/"
-                                target="_blank">Finans</a>
+                        <abbr title="Jogo do número secreto">
+                            <a class="projeto_lista_item_link" href="https://leal86.github.io/secret-number-game/"
+                                target="_blank">Número Secreto</a>
                         </abbr>
                     </h3>
-                    <img src="img/projetos/projeto-finans.png" alt="Imagem do projeto" class="projetos_lista_img-projeto">
+                    <img src="img/projetos/projeto-jogoNumeroSecreto.png" alt="Imagem do projeto"
+                        class="projetos_lista_img-projeto">
                 </li>
 
-
             </ul>
+
+            <p class="projetos_texto">
+                * Alguns projetos estão em desenvolvimento e serão atualizados em breve.
+            </p>
 
             <!-- <div id="grupo-projetos">
                 <div class="projeto">
@@ -267,6 +275,11 @@
         </div>
 
     </footer>
+
+    <button id="btn-topo" title="Voltar ao topo">
+        <span class="material-icons">arrow_upward</span>
+    </button>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
