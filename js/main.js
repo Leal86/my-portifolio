@@ -68,3 +68,41 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+// Dados dos projetos (exemplo, adapte conforme seus projetos)
+const projetosDetalhes = [
+    {
+        nome: "Viação Alvorada",
+        img: "img/projetos/projeto-viacaoAlvoradaSite.png",
+        descricao: "Site institucional da Viação Alvorada Desenvolvimento completo do site institucional da operadora de transportes Viação Alvorada(viacaoalvorada.pt), utilizando WordPress com tema customizado e integração de módulos específicos(formulários de contacto, sistema de “Perdidos e Achados” e mapa de rotas).Projeto focado em acessibilidade, desempenho e usabilidade responsiva, com painel de gestão otimizado para equipe interna.",
+        link: "https://www.viacaoalvorada.pt/",
+        repo: "https://github.com/leal86/viacaoalvorada-site"
+    },
+    // ...adicione os outros projetos aqui
+];
+
+// Função para abrir o modal
+function abrirModalProjeto(index) {
+    const modal = document.getElementById('modal-projeto');
+    const projeto = projetosDetalhes[index];
+    document.getElementById('modal-projeto-img').src = projeto.img;
+    document.getElementById('modal-projeto-titulo').textContent = projeto.nome;
+    document.getElementById('modal-projeto-descricao').textContent = projeto.descricao;
+    document.getElementById('modal-projeto-link').href = projeto.link;
+    document.getElementById('modal-projeto-repo').href = projeto.repo;
+    modal.style.display = 'flex';
+}
+
+// Fechar modal ao clicar no X ou fora do conteúdo
+document.querySelector('.modal-projeto__fechar').onclick = function () {
+    document.getElementById('modal-projeto').style.display = 'none';
+};
+document.getElementById('modal-projeto').onclick = function (e) {
+    if (e.target === this) this.style.display = 'none';
+};
+
+// Adicione evento nos itens da lista de projetos
+document.querySelectorAll('.projetos_lista_item').forEach((item, i) => {
+    item.onclick = () => abrirModalProjeto(i);
+});

@@ -294,8 +294,10 @@ p {
 
 .projetos_lista {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);   /* 2 colunas */
-    gap: 1.7em 0em; /* espaçamento entre os itens */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 colunas */
+    gap: 1.7em 0em;
+    /* espaçamento entre os itens */
     padding: 0;
     width: 100%;
     justify-items: center;
@@ -326,21 +328,22 @@ p {
     box-sizing: border-box;
 }
 
-.projetos_lista_item_hide, .projetos_lista_item_show {
+.projetos_lista_item_hide,
+.projetos_lista_item_show {
     display: none;
 }
 
 .projetos_lista_item:hover {
     transform: scale(1.05);
     background-color: var(--azul-vivido);
-    
+
 }
 
 .projeto_lista_item_link {
     text-decoration: none;
     color: var(--azul-profundo-escuro);
     font-weight: 700;
-    
+
 }
 
 .projeto_lista_item_link:hover {
@@ -626,6 +629,91 @@ p {
     opacity: 1;
     background: var(--azul-vivido-escuro, --azul-vivido-escuro);
     transform: scale(1.1);
+}
+
+/* MODAL DE CARREGAMENTO **********************************************************************************************************************/
+
+/* Modal de projeto */
+.modal-projeto {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-projeto__conteudo {
+    background: #fff;
+    padding: 2.5em 2em 2em 2em;
+    /* mais espaçamento interno */
+    border-radius: 16px;
+    max-width: 420px;
+    width: 90vw;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-projeto__fechar {
+    position: absolute;
+    top: .3em;
+    right: .2em;
+    font-size: 2.5em;
+    cursor: pointer;
+    color: var(--azul-profundo-escuro); /* vermelho */
+    background: none;
+    border: none;
+    z-index: 2;
+    padding: 0.2em 0.5em;
+    transition: color 0.2s;
+}
+
+.modal-projeto__fechar:hover {
+    color: #f00a0a; /* vermelho mais escuro no hover */
+}
+
+.modal-projeto__conteudo img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+}
+
+#modal-projeto-titulo {
+    margin-bottom: 0.7em;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#modal-projeto-descricao {
+    margin-bottom: 1.2em;
+    font-size: 1em;
+    color: #444;
+}
+
+#modal-projeto-link,
+#modal-projeto-repo {
+    display: inline-block;
+    margin: 0.5em 0.7em 0 0.7em;
+    padding: 0.6em 1.2em;
+    border-radius: 6px;
+    background: var(--azul-vivido, #0077ff);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+#modal-projeto-link:hover,
+#modal-projeto-repo:hover {
+    background: var(--azul-vivido-escuro, #0055aa);
 }
 
 
