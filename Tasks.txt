@@ -1,0 +1,50 @@
+Tarefas a serem feitas no portifólio
+
+
+<!-- PÁGINA INDEX.HTML-->
+
+
+/****** Secção Projetos ******/
+
+* Na secção projeto, tem que rever o tamanho da classe .projetos_lista_item, que ficar um pouco maior em medias a partir de 1440.05px.
+
+* Rever o link "Mais projetos" uma forma melhor de apresenta-lo em medias a parti de 768px
+
+***************************************************************************************************************************************** Na secção projeto, no modal tem que corrigir o posicionamento do botão de fechar. FEITO!!!
+
+* Na secção projeto, no modal tem que apresentar imagens de diferentes tamanhos correspondendo a media que esta sendo acessada.
+
+* Na secção projeto, fazer a pagina de modal para todos os projetos.
+
+* Na secção projeto, no modal o projeto Viação Alvorada, não é necessário o botão "Ver repositorio" somente um botão com "Ver projeto"
+
+* Na secção projeto, no modal tem que rever alinhamentos de texto, margin e padding.
+
+
+
+
+/****** Secção Contatos ******/
+
+* Fazer a troca dos ícones das redes por um que tenha melhor resolução.
+
+* Diminuir espaçamento entre os ícones a partir da media 1024px.
+
+
+
+
+/****** Botão flutuante ******/
+
+* Diminuir tamanho do botão flutuante a partir da media 1440px
+
+
+
+
+
+<!-- PÁGINA PAGINA-PROJETOS.HTML-->
+
+
+* Rever forma de apresentação dos projetos, cores de fonte, background, alinhamentos, tamanhos, margins.
+
+* Adicionar mais projetos a lista.
+
+* Refinar todos os projetos da lista em relação a responsividade.
