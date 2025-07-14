@@ -73,12 +73,61 @@ document.addEventListener('DOMContentLoaded', function () {
 // Dados dos projetos (exemplo, adapte conforme seus projetos)
 const projetosDetalhes = [
     {
-        nome: "Viação Alvorada",
+        nome: "Site institucional da Viação Alvorada",
         img: "img/projetos/projeto-viacaoAlvoradaSite.png",
-        descricao: "Site institucional da Viação Alvorada Desenvolvimento completo do site institucional da operadora de transportes Viação Alvorada(viacaoalvorada.pt), utilizando WordPress com tema customizado e integração de módulos específicos(formulários de contacto, sistema de “Perdidos e Achados” e mapa de rotas).Projeto focado em acessibilidade, desempenho e usabilidade responsiva, com painel de gestão otimizado para equipe interna.",
+        descricao: "<p class='modal-projeto-descricao-texto'>Site institucional da Viação Alvorada Desenvolvimento completo do site institucional da operadora de transportes Viação Alvorada (viacaoalvorada.pt), utilizando WordPress com tema customizado e integração de módulos específicos (formulários de contacto, sistema de “Perdidos e Achados” e mapa de rotas).</p> <br> <p class='modal-projeto-descricao-texto'>Desenvolvi o website oficial da Viação Alvorada (viacaoalvorada.pt) — empresa responsável pela operação da Carris Metropolitana na Área 1 da Grande Lisboa. O projeto foi construído em WordPress, com tema personalizado, adaptado para navegação responsiva, rápida e acessível a todos os públicos.</p> <br> <p class='modal-projeto-descricao-texto'>Implementei seções dinâmicas como notícias, formulários de contacto, página de “Perdidos e Achados” com workflow interno, além da integração com canais de suporte ao cliente. Também realizei otimizações de SEO, segurança e desempenho, com foco na escalabilidade e facilidade de gestão pelos administradores da empresa.</p>",
         link: "https://www.viacaoalvorada.pt/",
-        repo: "https://github.com/leal86/viacaoalvorada-site"
+
     },
+
+    {
+        nome: "Site fictício de uma Financeira",
+        img: "img/projetos/projeto-finans.png",
+        descricao: "<p class='modal-projeto-descricao-texto'>Criei esta landing page para simular a apresentação de um app financeiro fictício chamado “Finans”. O objetivo foi trabalhar a construção de uma página institucional clara, com foco em conversão e apresentação de funcionalidades.</p> <br> <p class='modal-projeto-descricao-texto'>Utilizei HTML e CSS puro para estruturar elementos como botões de download, áreas de destaque visual, descrição de recursos e chamadas para ação. O projeto é 100% responsivo e aplicável a landing pages de startups e apps reais.</p>",
+        link: "https://leal86.github.io/finans-app/",
+        repo: "https://github.com/Leal86/finans-app"
+    },
+
+    {
+        nome: "Cordel Moderno com Parallax",
+        img: "img/projetos/projeto-cordelModerno-site.png",
+        descricao: "<p class='modal-projeto-descricao-texto'>Desenvolvi esta landing page inspirada em literatura de cordel utilizando HTML e CSS puro, com foco em experimentação visual por meio do efeito parallax.</p> <br> <p class='modal-projeto-descricao-texto'> O objetivo do projeto foi explorar técnicas de posicionamento e sobreposição de camadas para criar profundidade e movimento ao rolar a página. Todo o código foi estruturado de forma semântica, com responsividade e compatibilidade entre dispositivos móveis e desktop. Uma abordagem limpa e performática, ideal para apresentação de conteúdo cultural com apelo visual.</p>",
+        link: "https://leal86.github.io/cordel-moderno-paralax/",
+        repo: "https://github.com/Leal86/cordel-moderno-paralax"
+    },
+
+    {
+        nome: "Cordel Moderno com Parallax",
+        img: "img/projetos/projeto-cordelModerno-site.png",
+        descricao: "<p class='modal-projeto-descricao-texto'>Desenvolvi esta landing page para simular um portal de divulgação de eventos culturais e artísticos. Estruturado com HTML e CSS puro, o site apresenta seções para agenda de eventos, descrição institucional, chamadas para participação e contatos.</p> <br> <p class='modal-projeto-descricao-texto'>O layout foi projetado com foco em clareza visual, identidade cultural e responsividade, sendo ideal para projetos relacionados a centros culturais, coletivos ou campanhas públicas de cultura.</p>",
+        link: "https://leal86.github.io/cultura-eventos/",
+        repo: "https://github.com/Leal86/cultura-eventos"
+    },
+
+    {
+        nome: "História do Sistema Android",
+        img: "img/projetos/projeto-androidTechInsights-site.png",
+        descricao: "<p class='modal-projeto-descricao-texto'>Desenvolvi esta landing page para simular um portal de divulgação de eventos culturais e artísticos. Estruturado com HTML e CSS puro, o site apresenta seções para agenda de eventos, descrição institucional, chamadas para participação e contatos.</p> <br> <p class='modal-projeto-descricao-texto'>O layout foi projetado com foco em clareza visual, identidade cultural e responsividade, sendo ideal para projetos relacionados a centros culturais, coletivos ou campanhas públicas de cultura.</p>",
+        link: "https://leal86.github.io/android-tech-insights/",
+        repo: "https://github.com/Leal86/android-tech-insights"
+    },
+
+    {
+        nome: "Clone do Spotify",
+        img: "img/projetos/projeto-spotifyClone.png",
+        descricao: "<p class='modal-projeto-descricao-texto'>Desenvolvi este projeto como exercício prático de clonagem da landing page do Spotify, utilizando apenas HTML e CSS.</p> <br> <p class='modal-projeto-descricao-texto'>Busquei replicar fielmente o layout, tipografia, espaçamentos e organização visual da versão oficial, reforçando habilidades em responsividade e estrutura em grid/flexbox. É um projeto ideal para demonstrar domínio de front-end focado em interfaces reais do mercado.</p>",
+        link: "https://leal86.github.io/clone-spotify-site/",
+        repo: "https://github.com/Leal86/clone-spotify-site"
+    },
+
+    {
+        nome: "Clone do Spotify",
+        img: "img/projetos/projeto-spotifyClone.png",
+        descricao: "<p class='modal-projeto-descricao-texto'> </p> <br> <p class='modal-projeto-descricao-texto'></p>",
+        link: "https://leal86.github.io/clone-spotify-site/",
+        repo: "https://github.com/Leal86/clone-spotify-site"
+    },
+
     // ...adicione os outros projetos aqui
 ];
 
@@ -88,9 +137,16 @@ function abrirModalProjeto(index) {
     const projeto = projetosDetalhes[index];
     document.getElementById('modal-projeto-img').src = projeto.img;
     document.getElementById('modal-projeto-titulo').textContent = projeto.nome;
-    document.getElementById('modal-projeto-descricao').textContent = projeto.descricao;
+    document.getElementById('modal-projeto-descricao').innerHTML = projeto.descricao;
     document.getElementById('modal-projeto-link').href = projeto.link;
-    document.getElementById('modal-projeto-repo').href = projeto.repo;
+    const btnRepo = document.getElementById('modal-projeto-repo');
+    if (projeto.repo) {
+        btnRepo.style.display = 'inline-block';
+        btnRepo.href = projeto.repo;
+    } else {
+        btnRepo.style.display = 'none';
+    }
+
     modal.style.display = 'flex';
 }
 
