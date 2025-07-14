@@ -8,18 +8,23 @@
 @import url(../css/estilo.media-queries.css);
 
 :root {
+
+    /* CORES ******************************************************************************************************************************************/
     --azul-palido: #accbe1;
     --azul-vivido: #00a6fb;
     --azul-vivido-escuro: #0582ca;
     --azul-brilhante: #006494;
     --azul-profundo: #003554;
     --azul-profundo-escuro: #051923;
-    --azul-degrade: linear-gradient(97.54deg, #003554 35.49%, #0582ca 165.37%);
+    --cor-de-fundo: #F5F7FA;
+    --cor-botao-fechar: #B22222;
     --branco: #ffffff;
     --preto: #000000;
-    --textos-icones: #4A4A4A;
-    --cor-de-fundo: #F5F7FA;
 
+    --textos-icones: #4A4A4A;
+    --azul-degrade: linear-gradient(97.54deg, #003554 35.49%, #0582ca 165.37%);
+
+    /* FONTES ******************************************************************************************************************************************/
     --fonte-padrao: arial, Verdana, Helvetica, sans-serif;
     --fonte-manuscrita: 'Arizonia', 'Handwriting';
     --fonte-Cabecalho: 'Cinzel', 'Display';
@@ -348,6 +353,7 @@ p {
 
 .projeto_lista_item_link:hover {
     color: var(--branco);
+    cursor: pointer;
 }
 
 .projetos_lista_img-projeto {
@@ -648,10 +654,10 @@ p {
 }
 
 .modal-projeto__conteudo {
-    background: #fff;
-    padding: 2.5em 2em 2em 2em;
+    background: var(--cor-de-fundo);
+    padding: 2.5em 1.5em 1.5em 1.5em;
     /* mais espaçamento interno */
-    border-radius: 16px;
+    border-radius: 2px;
     max-width: 420px;
     width: 90vw;
     text-align: center;
@@ -664,23 +670,26 @@ p {
 .modal-projeto__fechar {
     position: absolute;
     top: .3em;
-    right: .2em;
-    font-size: 2.5em;
+    right: .3em;
+    font-size: 1.8em;
     cursor: pointer;
-    color: var(--azul-profundo-escuro); /* vermelho */
-    background: none;
+    color: var(--branco);
+    /* vermelho */
+    background: var(--azul-profundo);
     border: none;
+    border-radius: 3px;
     z-index: 2;
-    padding: 0.2em 0.5em;
+    padding: 0.03em 0.2em;
     transition: color 0.2s;
 }
 
 .modal-projeto__fechar:hover {
-    color: #f00a0a; /* vermelho mais escuro no hover */
+    background: var(--cor-botao-fechar);
 }
 
 .modal-projeto__conteudo img {
     width: 100%;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.575);
     border-radius: 8px;
     margin-bottom: 1.5em;
     margin-top: 0.5em;
@@ -694,8 +703,16 @@ p {
 
 #modal-projeto-descricao {
     margin-bottom: 1.2em;
+    padding: 0.5em;
     font-size: 1em;
     color: #444;
+}
+
+.modal-projeto-descricao-texto {
+    padding: 0;
+    font-size: 1em;
+    color: #444;
+    text-align: justify;
 }
 
 #modal-projeto-link,

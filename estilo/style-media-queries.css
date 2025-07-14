@@ -281,7 +281,7 @@
 }
 
 /* Large devices (laptops/desktops, 768.5px and up) */
-@media only screen and (min-width: 768.5px) and (max-width: 1024px) {
+@media only screen and (min-width: 768.05px) and (max-width: 1024px) {
 
     /* HEADER ******************************************************************************************************************************************/
     .cabecalho_container_logotipo {
@@ -550,7 +550,7 @@
 }
 
 /* Extra large devices (large laptops and desktops, 1024.5px and up) */
-@media only screen and (min-width: 1024.5px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024.05px) and (max-width: 1440px) {
 
     /* HEADER ******************************************************************************************************************************************/
     .cabecalho_container_logotipo {
@@ -825,7 +825,7 @@
 }
 
 /* extra large devices (large laptops and TVs 4K, 1440px and up) */
-@media only screen and (width >=1440.5px) {
+@media only screen and (width >=1440.05px) {
 
     /* HEADER ******************************************************************************************************************************************/
     .cabecalho {}
