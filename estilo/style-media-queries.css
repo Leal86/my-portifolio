@@ -973,14 +973,14 @@
         /* 4 colunas */
         margin: auto;
         padding: auto;
-        max-width: 1000px;
+        max-width: 1150px;
     }
 
     .projetos_lista_item {
         display: flex !important;
         padding: 1.5em 0;
-        width: 75%;
-        max-width: 300px;
+        width: 80%;
+        max-width: 450px;
     }
 
     .projetos_lista_item_hide {
@@ -1028,7 +1028,7 @@
 
     /* SECTION RODAPÉ **********************************************************************************************************************************/
     .rodape {
-        padding: 3% 21.5%;
+        padding: 3% 18.5%;
     }
 
     .rodape::before {

@@ -89,6 +89,30 @@ const projetosDetalhes = [
     },
 
     {
+        nome: "Clone do Spotify",
+        img: "img/projetos/projeto-spotifyClone-smal.png",
+        descricao: "<p class='modal-projeto-descricao-texto'>Desenvolvi este projeto como exercício prático de clonagem da landing page do Spotify, utilizando apenas HTML e CSS.</p> <br> <p class='modal-projeto-descricao-texto'>Busquei replicar fielmente o layout, tipografia, espaçamentos e organização visual da versão oficial, reforçando habilidades em responsividade e estrutura em grid/flexbox. É um projeto ideal para demonstrar domínio de front-end focado em interfaces reais do mercado.</p>",
+        link: "https://leal86.github.io/clone-spotify-site/",
+        repo: "https://github.com/Leal86/clone-spotify-site"
+    },
+    
+    {
+        nome: "Loja virtual de livros",
+        img: "img/projetos/projeto-loja-virtual-livros-smal.png",
+        descricao: "<p class='modal-projeto-descricao-texto'>Site de e-commerce fictício voltado para venda de livros, com HTML e CSS. Estrutura responsiva, com carrossel, categorias e layout moderno.</p> <br> <p class='modal-projeto-descricao-texto'>Inspirado em lojas de livros digitais, o projeto AluraBooks foi criado com HTML e CSS puro, utilizando técnicas modernas de layout com grid e flexbox. A estrutura conta com carrossel de destaques, navegação entre categorias e apresentação clara dos produtos. O site é 100% responsivo e representa uma boa base para projetos de e-commerce estáticos.</p>",
+        link: "https://leal86.github.io/aluraBooks-store/",
+        repo: "https://github.com/Leal86/aluraBooks-store"
+    },
+
+    {
+        nome: "Secret Number Game",
+        img: "img/projetos/projeto-jogoNumeroSecreto-smal.png",
+        descricao: "<p class='modal-projeto-descricao-texto'>Jogo simples de adivinhação com lógica em JavaScript puro. Projeto interativo com manipulação de DOM, entrada de dados e lógica condicional.</p> <br> <p class='modal-projeto-descricao-texto'>Criei este jogo interativo de adivinhação de número secreto como prática de lógica em JavaScript. O jogador precisa descobrir um número aleatório com base em dicas visuais. A interface, desenvolvida com HTML e CSS, se conecta a uma lógica JS que valida a entrada, compara com o número sorteado e fornece feedback ao usuário. Projeto ideal para consolidar fundamentos como eventos, loops, condicional e manipulação de DOM.</p>",
+        link: "https://leal86.github.io/secret-number-game/",
+        repo: "https://github.com/Leal86/secret-number-game"
+    },
+
+    {
         nome: "Cordel Moderno com Parallax",
         img: "img/projetos/projeto-cordelModerno-site-smal.png",
         descricao: "<p class='modal-projeto-descricao-texto'>Desenvolvi esta landing page inspirada em literatura de cordel utilizando HTML e CSS puro, com foco em experimentação visual por meio do efeito parallax.</p> <br> <p class='modal-projeto-descricao-texto'> O objetivo do projeto foi explorar técnicas de posicionamento e sobreposição de camadas para criar profundidade e movimento ao rolar a página. Todo o código foi estruturado de forma semântica, com responsividade e compatibilidade entre dispositivos móveis e desktop. Uma abordagem limpa e performática, ideal para apresentação de conteúdo cultural com apelo visual.</p>",
@@ -97,7 +121,7 @@ const projetosDetalhes = [
     },
 
     {
-        nome: "Culturama Website",
+        nome: "🎭 Culturama Website",
         img: "img/projetos/projeto-culturamaSite-smal.jpg",
         descricao: "<p class='modal-projeto-descricao-texto'>Desenvolvi esta landing page para simular um portal de divulgação de eventos culturais e artísticos. Estruturado com HTML e CSS puro, o site apresenta seções para agenda de eventos, descrição institucional, chamadas para participação e contatos.</p> <br> <p class='modal-projeto-descricao-texto'>O layout foi projetado com foco em clareza visual, identidade cultural e responsividade, sendo ideal para projetos relacionados a centros culturais, coletivos ou campanhas públicas de cultura.</p>",
         link: "https://leal86.github.io/cultura-eventos/",
@@ -113,27 +137,11 @@ const projetosDetalhes = [
     },
 
     {
-        nome: "Clone do Spotify",
-        img: "img/projetos/projeto-spotifyClone-smal.png",
-        descricao: "<p class='modal-projeto-descricao-texto'>Desenvolvi este projeto como exercício prático de clonagem da landing page do Spotify, utilizando apenas HTML e CSS.</p> <br> <p class='modal-projeto-descricao-texto'>Busquei replicar fielmente o layout, tipografia, espaçamentos e organização visual da versão oficial, reforçando habilidades em responsividade e estrutura em grid/flexbox. É um projeto ideal para demonstrar domínio de front-end focado em interfaces reais do mercado.</p>",
-        link: "https://leal86.github.io/clone-spotify-site/",
-        repo: "https://github.com/Leal86/clone-spotify-site"
-    },
-
-    {
         nome: "Tec Blog",
         img: "img/projetos/projeto-tecBlog-smal.png",
         descricao: "<p class='modal-projeto-descricao-texto'>Blog fictício criado com HTML e CSS, simulando a estrutura de um portal de notícias. Possui layout responsivo, seções de postagens e navegação lateral. Projeto voltado para prática de estrutura editorial.</p> <br> <p class='modal-projeto-descricao-texto'>Desenvolvi o TecBlog como um exercício de prática em construção de blogs estáticos com HTML e CSS, aplicando técnicas básicas de layout, tipografia e separação de conteúdo. A estrutura inclui cabeçalho com menu de navegação, posts organizados em colunas, barra lateral com categorias e rodapé. Todo o layout é responsivo e visa simular a arquitetura típica de sites de notícias, servindo como base para projetos futuros mais complexos.</p>",
         link: "https://leal86.github.io/tecblog-praticando/",
         repo: "https://github.com/Leal86/tecblog-praticando"
-    },
-
-    {
-        nome: "Secret Number Game",
-        img: "img/projetos/projeto-jogoNumeroSecreto-smal.png",
-        descricao: "<p class='modal-projeto-descricao-texto'>Jogo simples de adivinhação com lógica em JavaScript puro. Projeto interativo com manipulação de DOM, entrada de dados e lógica condicional.</p> <br> <p class='modal-projeto-descricao-texto'>Criei este jogo interativo de adivinhação de número secreto como prática de lógica em JavaScript. O jogador precisa descobrir um número aleatório com base em dicas visuais. A interface, desenvolvida com HTML e CSS, se conecta a uma lógica JS que valida a entrada, compara com o número sorteado e fornece feedback ao usuário. Projeto ideal para consolidar fundamentos como eventos, loops, condicional e manipulação de DOM.</p>",
-        link: "https://leal86.github.io/secret-number-game/",
-        repo: "https://github.com/Leal86/secret-number-game"
     },
 
     {
@@ -158,14 +166,6 @@ const projetosDetalhes = [
         descricao: "<p class='modal-projeto-descricao-texto'>Site pessoal fictício para modelo, criado com HTML e CSS. Layout responsivo, com seções de biografia, galeria e contato. Foco em organização de conteúdo e visual limpo.</p> <br> <p class='modal-projeto-descricao-texto'>Este projeto simula um site de apresentação pessoal de uma modelo chamada Anna Bella. Desenvolvido com HTML e CSS, o site conta com páginas dedicadas à biografia, portfólio fotográfico e informações de contato. A estrutura é responsiva e voltada para destacar a identidade visual de forma elegante e organizada. Ideal como modelo de site institucional para artistas, influenciadores ou criadores.</p>",
         link: "https://leal86.github.io/anna-bella-modelo-site/index.html",
         repo: "https://github.com/Leal86/anna-bella-modelo-site"
-    },
-
-    {
-        nome: "Loja virtual de livros",
-        img: "img/projetos/projeto-loja-virtual-livros-smal.png",
-        descricao: "<p class='modal-projeto-descricao-texto'>Site de e-commerce fictício voltado para venda de livros, com HTML e CSS. Estrutura responsiva, com carrossel, categorias e layout moderno.</p> <br> <p class='modal-projeto-descricao-texto'>Inspirado em lojas de livros digitais, o projeto AluraBooks foi criado com HTML e CSS puro, utilizando técnicas modernas de layout com grid e flexbox. A estrutura conta com carrossel de destaques, navegação entre categorias e apresentação clara dos produtos. O site é 100% responsivo e representa uma boa base para projetos de e-commerce estáticos.</p>",
-        link: "https://leal86.github.io/aluraBooks-store/",
-        repo: "https://github.com/Leal86/aluraBooks-store"
     },
 
     {
