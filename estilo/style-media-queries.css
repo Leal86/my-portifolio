@@ -1161,9 +1161,9 @@
     }
 
     .contatos_lista_item_link {
-        width: 95px;
+        width: 80px;
         /* ajuste para o tamanho do seu ícone */
-        height: 95px;
+        height: 80px;
         /* ajuste para o tamanho do seu ícone */
     }
 
@@ -1183,7 +1183,7 @@
     }
 
     .rodape_container_lista-menu_item {
-        padding: 0 0 1em 4.5em;
+        padding: 0 0 1.3em 4.5em;
         font-size: 1.1em;
     }
 
