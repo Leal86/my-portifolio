@@ -245,9 +245,9 @@
     }
 
     .contatos_lista_item_link {
-        width: 70px;
+        width: 60px;
         /* ajuste para o tamanho do seu ícone */
-        height: 70px;
+        height: 60px;
         /* ajuste para o tamanho do seu ícone */
     }
 
@@ -282,12 +282,12 @@
     }
 
     .rodape_container_item_lista-social-media_img {
-        width: 35px;
+        width: 40px;
         margin: 0 2.7em 0.3em 0;
     }
 
     .icon-email-rodape {
-        width: 45px;
+        width: 50px;
         margin: -0.7em 2.4em 0 0;
     }
 
@@ -497,10 +497,14 @@
         padding: 1em 0;
     }
 
+    .contatos_lista {
+        padding: 0;
+    }
+
     .contatos_lista_item_link {
-        width: 70px;
+        width: 60px;
         /* ajuste para o tamanho do seu ícone */
-        height: 70px;
+        height: 60px;
         /* ajuste para o tamanho do seu ícone */
     }
 
@@ -525,12 +529,12 @@
     .rodape_container_item_titulo-social-media {
         font-size: 1.2em;
         margin-right: 1.5em;
-        padding-bottom: 1em;
+        padding-bottom: 0.7em;
     }
 
     .rodape_container_item_lista-social-media_img {
-        width: 38px;
-        margin-right: 2.5em;
+        width: 45px;
+        margin-right: 2.3em;
         margin-bottom: 0.3em;
     }
 
@@ -540,8 +544,8 @@
     }
 
     .icon-email-rodape {
-        width: 50px;
-        margin: -0.7em 2.1em 0 0;
+        width: 63px;
+        margin: -0.7em 1.7em 0 0;
     }
 
     .rodape_item-3 {
@@ -827,9 +831,9 @@
     }
 
     .contatos_lista_item_link {
-        width: 80px;
+        width: 70px;
         /* ajuste para o tamanho do seu ícone */
-        height: 80px;
+        height: 70px;
         /* ajuste para o tamanho do seu ícone */
     }
 
@@ -875,8 +879,8 @@
     }
 
     .icon-email-rodape {
-        width: 64px;
-        margin: -0.9em -.05em 0 0;
+        width: 65px;
+        margin: -0.9em -0.15em 0 0;
     }
 
     .rodape_item-3 {

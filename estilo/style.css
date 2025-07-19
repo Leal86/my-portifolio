@@ -429,9 +429,9 @@ p {
     display: inline-block;
     text-decoration: none;
     color: var(--textos-icones);
-    width: 60px;
+    width: 50px;
     /* ajuste para o tamanho do seu ícone */
-    height: 60px;
+    height: 50px;
     /* ajuste para o tamanho do seu ícone */
 }
 
@@ -517,7 +517,7 @@ p {
     color: var(--branco);
     font-weight: 600;
     text-align: start;
-    padding-bottom: 0.8em;
+    padding-bottom: 1em;
 }
 
 .rodape_container_lista-menu {
@@ -574,8 +574,8 @@ p {
 }
 
 .icon-email-rodape {
-    width: 45px;
-    margin: -0.7em 0.2em 0 0;
+    width: 50px;
+    margin: -0.7em 0.08em 0 0;
 }
 
 .rodape_item-3 {
